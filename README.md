@@ -1,0 +1,223 @@
+# EHS Inverse Design Code and Reproducibility Package
+
+## Overview
+
+This repository provides the source code, trained machine-learning models, example input data, representative output files, and selected figure-reproduction materials associated with the manuscript:
+
+**Inverse Design of Eutectic Hydrated Salts via Logic-Driven Multi-Agent Framework: Mapping the Melting Point–Enthalpy Landscape**
+
+The repository is made publicly accessible to facilitate editorial and peer-review assessment and to support reproducibility of the main computational workflow.
+
+The included workflow is designed to identify candidate eutectic hydrated salt combinations under user-specified thermal targets. It accepts a CSV file containing hydrated-salt descriptors, parses target melting point (`Tm`) and phase-change enthalpy (`ΔHm`) constraints, performs multi-stage candidate selection and model-based prediction, and exports ranked result files for further analysis.
+
+## Repository Structure
+
+- `app.py`: Flask application entry point and web routes.
+- `multi_agent_selector.py`: core multi-agent screening workflow.
+- `salt_combination_generator.py`: feature construction, model loading, prediction utilities, and compatibility-related helper functions.
+- `strategy_selector.py`: rule-based candidate pre-screening strategy.
+- `apply_compatibility_bonus_standalone.py`: post-processing module for compatibility-weighted reranking.
+- `templates/index.html`: web interface.
+- `data/`: structured metadata for hydrated salts (`*_structured.json`).
+- `pure_hydrated_salts_dataset.csv`: default/example input dataset.
+- `eutectic_data_single_peak.csv`: processed eutectic dataset with single-peak labels.
+- `eutectic_data_tm.csv`: processed eutectic dataset with melting-temperature (`Tm`) values.
+- `eutectic_data_dh.csv`: processed eutectic dataset with phase-change enthalpy (`ΔHm`) values.
+- `agent_recommended_results.csv`: representative example output file.
+- `best model/`: trained prediction models used by the current screening workflow.
+- `figure_reproduction/reproduce_key_figures.ipynb`: Jupyter notebook for reproducing selected manuscript-related visualizations from the processed datasets and exported screening results.
+- `figure_reproduction/`: processed CSV/XLSX files used as figure-input data for the visualization notebook.
+- `requirements.txt`: pinned Python dependencies for running the screening system.
+- `requirements-visualization.txt`: additional dependencies for running the figure-reproduction notebook.
+- `.env.example`: environment-variable template for API configuration.
+- `start_system.bat`: Windows launcher for convenient local reproduction.
+
+## System Requirements
+
+- Operating system tested by the authors: Windows 10/11
+- Python tested by the authors: Python 3.11.7
+- Recommended Python version: Python 3.9 or later
+- Network access is required for the DashScope/Qwen API calls used by the multi-agent screening workflow.
+- No non-standard hardware is required for the provided demo.
+
+## Installation
+
+From the project root directory, create and activate a Python environment, then install the pinned dependencies:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Typical installation time on a normal desktop computer is expected to be several minutes, depending on network speed and Python package cache status.
+
+## External API Configuration
+
+The multi-agent workflow calls DashScope (`qwen-plus`). Set the API key as an environment variable before running the web service.
+
+PowerShell:
+
+```powershell
+$env:DASHSCOPE_API_KEY="your_dashscope_api_key_here"
+```
+
+Command Prompt:
+
+```bat
+set DASHSCOPE_API_KEY=your_dashscope_api_key_here
+```
+
+Do not put a real API key into the source code. `.env.example` is provided only as a template.
+
+## Included Trained Models
+
+The trained models used by the current screening workflow are included in `best model/`:
+
+- `best model/single_peak_XGBoost_best_model_from_roc_redraw.pkl`: single-peak classification model.
+- `best model/tm_gbdt_best_model.pkl`: melting-temperature (`Tm`) regression model.
+- `best model/dh_svm_best_model.pkl`: phase-change enthalpy (`ΔHm`) regression model.
+
+These models correspond to the hierarchical prediction workflow used in the manuscript: single-peak gating, melting-temperature prediction, and enthalpy prediction.
+
+## Demo Input
+
+Use the included example input file:
+
+- `pure_hydrated_salts_dataset.csv`
+
+This public repository contains a representative processed pure hydrated salt dataset sufficient for running and testing the demo workflow. The full raw source datasets, additional data-curation details, and large-scale prediction-space files are available from the corresponding author upon reasonable request.
+
+Suggested demo target values:
+
+- Target melting point (`Tm`): `14`
+- Target enthalpy (`ΔHm`): `180`
+
+## Running the Demo
+
+### Option 1: Windows Launcher
+
+Run:
+
+```bat
+start_system.bat
+```
+
+### Option 2: Command Line
+
+Start the local web service:
+
+```bash
+python app.py
+```
+
+Open the web interface:
+
+- `http://localhost:5000`
+
+In the web interface:
+
+1. Upload `pure_hydrated_salts_dataset.csv`.
+2. Enter `14` as the target melting point.
+3. Enter `180` as the target enthalpy.
+4. Start the screening task.
+5. Download the generated result files after the task completes.
+
+Typical demo runtime on a normal desktop computer is expected to be within tens of minutes, depending on network latency for DashScope API calls and the selected screening target.
+
+## Expected Output
+
+The main output files are generated in the project root directory after a screening run:
+
+- `agent_recommended_results.csv`
+- `salt_combinations_formatted.csv`
+- `results_perfect_compliance.csv`
+- `results_good_compliance.csv`
+- `results_acceptable_compliance.csv`
+
+This repository includes `agent_recommended_results.csv` as a representative example output file and schema reference. Important columns include:
+
+- `salt_a`, `salt_b`, `salt_c`
+- `ratio_a`, `ratio_b`, `ratio_c`
+- `tm_pred`, `dh_pred`
+- `single_peak_proba`, `is_single_peak`
+- `compliance_level`, `compliance_desc`
+- `score`
+
+Because the workflow includes external LLM calls, exact candidate ordering can vary if the upstream model behavior changes. The trained prediction models and rule-based post-processing code are included in this repository to support reproducible testing of the main screening workflow.
+
+## Figure Reproduction
+
+The folder `figure_reproduction/` contains a Jupyter notebook and processed CSV/XLSX files for reproducing selected manuscript-related visualizations from the provided datasets and exported screening results.
+
+The main notebook is:
+
+- `figure_reproduction/reproduce_key_figures.ipynb`
+
+Demo target values used by the visualization workflow:
+
+- Target melting point (`Tm`): `14`
+- Target enthalpy (`ΔHm`): `180`
+
+Install the additional notebook/plotting dependencies before running the visualization workflow:
+
+```bash
+pip install -r requirements-visualization.txt
+```
+
+Run the notebook from the `figure_reproduction/` directory so that the relative input paths resolve correctly.
+
+The notebook uses processed figure-input files in `figure_reproduction/` and exports PNG/PDF figures showing selected data distributions, model-result summaries, and target-oriented screening results.
+
+This notebook does not aim to reproduce every figure in the manuscript from raw experimental data. Instead, it provides reproducible examples for key visualizations associated with the curated hydrated-salt dataset, model outputs, and target-oriented screening results.
+
+## Running on Custom Data
+
+Prepare a CSV file with one salt identifier column and the required descriptor columns. The example file `pure_hydrated_salts_dataset.csv` shows the expected column structure:
+
+- `ID`
+- `Tm (°C)`
+- `ΔHm (J/g)`
+- `Molecular Weight`
+- `Hydrogen Bond Donor Count`
+- `Hydrogen Bond Acceptor Count`
+- `Topological Polar Surface Area`
+- `Heavy Atom Count`
+- `Complexity`
+- `Covalently-Bonded Unit Count`
+- `Hydration Number`
+- `Elem_H`
+- `Elem_O`
+
+UTF-8 encoded CSV files are preferred. If UTF-8 decoding fails, the application falls back to GBK.
+
+## Web Routes
+
+- `GET /`: main page.
+- `POST /upload_run`: upload data and start a screening task.
+- `GET /status`: query task status, progress, and recent logs.
+- `GET /download/<which>`: download generated result files.
+
+Supported values for `<which>`:
+
+- `recommend`
+- `features`
+- `perfect`
+- `good`
+- `acceptable`
+
+## Notes for Manuscript Review
+
+- The repository includes the source code, example input data, representative output file, and trained model files required to run and test the current screening workflow.
+- Structured metadata in `data/` are required for compatibility-aware screening and reranking.
+- The post-processing module applies an additional compatibility-weighted ranking step after the main screening stage.
+- Processed structured records and example datasets are provided for running and testing the workflow. Full raw source datasets and additional curation details are available from the corresponding author upon reasonable request.
+- This version has been cleaned to remove deprecated testing code and nonessential legacy entry points.
+
+## License and Availability
+
+This repository is provided to support manuscript review and software reproducibility. Redistribution, reuse, or modification outside manuscript review and reproducibility assessment requires permission from the authors unless a formal license is added later.
+
+## Disclaimer
+
+This repository is intended to accompany an academic manuscript. Sensitive credentials should be externalized and managed through environment variables or other secure configuration mechanisms.
