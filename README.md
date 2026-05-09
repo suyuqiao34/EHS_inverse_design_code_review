@@ -4,7 +4,7 @@
 
 This repository contains the code and example data for a web-based screening system designed to identify candidate eutectic hydrated salt combinations under user-specified thermal targets. The system accepts a CSV file containing salt descriptors, parses target melting point (`Tm`) and enthalpy (`ΔHm`) constraints, performs multi-stage candidate selection and model-based prediction, and exports ranked result files for further analysis.
 
-This version has been prepared for manuscript review and retains the executable workflow required for data upload, screening, ranking, and result export.
+This public repository has been prepared to support manuscript review and software reproducibility. It retains the executable workflow required for data upload, screening, ranking, and result export.
 
 ## Repository Structure
 
@@ -129,7 +129,7 @@ The main output files are generated in the project root directory after a screen
 - `results_good_compliance.csv`
 - `results_acceptable_compliance.csv`
 
-The submitted package includes `agent_recommended_results.csv` as an example output file and schema reference. Important columns include:
+This repository includes `agent_recommended_results.csv` as an example output file and schema reference. Important columns include:
 
 - `salt_a`, `salt_b`, `salt_c`
 - `ratio_a`, `ratio_b`, `ratio_c`
@@ -194,17 +194,17 @@ Supported values for `<which>`:
 - `good`
 - `acceptable`
 
-## Notes for Manuscript Submission
+## Notes for Manuscript Review
 
-- The repository includes the source code, example input data, example output file, and trained model files required by the current screening workflow.
+- The repository includes the source code, example input data, example output file, and trained model files required to run and test the current screening workflow.
 - Structured metadata in `data/` are required for compatibility-aware screening and reranking.
 - The post-processing module applies an additional compatibility-weighted ranking step after the main screening stage.
 - This version has been cleaned to remove deprecated testing code and nonessential legacy entry points.
 
 ## License and Availability
 
-This code package is provided to editors and reviewers for confidential peer-review assessment. Redistribution or reuse outside the peer-review process requires permission from the authors unless a separate public license is provided. Upon publication, the code will be made available through a public repository or upon reasonable request.
+This repository is provided to support manuscript review and software reproducibility. Redistribution or reuse outside the peer-review process requires permission from the authors unless a separate public license is provided.
 
 ## Disclaimer
 
-This repository is intended to accompany an academic manuscript. For public release, sensitive credentials should be externalized and managed through environment variables or other secure configuration mechanisms.
+This repository is intended to accompany an academic manuscript. Sensitive credentials should be externalized and managed through environment variables or other secure configuration mechanisms.
