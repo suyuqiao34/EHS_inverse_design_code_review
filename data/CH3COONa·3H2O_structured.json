@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 23665404,
+    "RecordTitle": "Sodium Acetate Trihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 58,
+    "Enthalpy_value_J_per_g": 272
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "C2H9NaO5",
+    "Molecular_Weight_g_per_mol": "136.08",
+    "Hydrogen_Bond_Donor_Count": 3,
+    "Hydrogen_Bond_Acceptor_Count": 5,
+    "Topological_Polar_Surface_Angstrom2": 43.1,
+    "Heavy_Atom_Count": 8
+  },
+  "identifiers": {
+    "IUPAC_Name": "sodium;acetate;trihydrate",
+    "SMILES": "CC(=O)[O-].O.O.O.[Na+]",
+    "InChI": "InChI=1S/C2H4O2.Na.3H2O/c1-2(3)4;;;;/h1H3,(H,3,4);;3*1H2/q;+1;;;/p-1",
+    "InChIKey": "AYRVGWHSXIMRAB-UHFFFAOYSA-M"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5360545 (Sodium)",
+      "CID 962 (Water)",
+      "CID 176 (Acetic Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 5,
+    "Hydration_State": "trihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 34.6,
+    "Exact_Mass_Da": "136.03476767"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "CH3COONa·3H2O",
+    "Compound_Name": "Sodium acetate trihydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "CH3COO-",
+    "Hydration_Number": 3,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

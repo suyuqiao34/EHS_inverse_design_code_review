@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eutectic Salt Combination Screening System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .form-group input[type="file"],
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-right: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
+        }
+        
+        .status-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e1e5e9;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .log-container {
+            background: #2d3748;
+            color: #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            margin-top: 15px;
+        }
+        
+        .download-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .download-card {
+            background: white;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        
+        .download-card:hover {
+            border-color: #4facfe;
+            transform: translateY(-2px);
+        }
+        
+        .download-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .download-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .error-message {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .success-message {
+            background: #c6f6d5;
+            color: #2f855a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-left: 4px solid #4facfe;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Eutectic Salt Combination Screening System</h1>
+            <p>Intelligent Eutectic Hydrated Salt Design and Optimization Platform</p>
+        </div>
+        
+        <div class="content">
+            <!-- Upload and Run Form -->
+            <div class="form-section">
+                <h2>📁 Data Upload & Parameter Settings</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="file">Select CSV Data File:</label>
+                        <input type="file" id="file" name="file" accept=".csv" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tm">Target Melting Point (Tm):</label>
+                            <input type="text" id="tm" name="tm" placeholder="e.g.: 30°C or 30" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dh">Target Enthalpy (ΔH):</label>
+                            <input type="text" id="dh" name="dh" placeholder="e.g.: >150 J/g or 150" required>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <button type="submit" class="btn" id="runBtn">🚀 Start Screening</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Running Status -->
+            <div class="status-section" id="statusSection" style="display: none;">
+                <h2>📊 Running Status</h2>
+                <div id="statusContent">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <p id="statusText">Preparing...</p>
+                    <p id="progressText"></p>
+                    <div class="log-container" id="logContainer"></div>
+                </div>
+            </div>
+            
+            <!-- Download Results -->
+            <div id="downloadSection" style="display: none;">
+                <h2>📥 Download Results</h2>
+                <div class="download-section">
+                    <div class="download-card" id="recommendCard">
+                        <h3>🎯 Recommended Results</h3>
+                        <p>Best salt combinations from AI screening</p>
+                        <button class="btn" onclick="downloadFile('recommend')">Download</button>
+                    </div>
+                    <div class="download-card" id="perfectCard">
+                        <h3>🏆 Perfect Compliance</h3>
+                        <p>Combinations with 100% compliance</p>
+                        <button class="btn" onclick="downloadFile('perfect')">Download</button>
+                    </div>
+                    <div class="download-card" id="goodCard">
+                        <h3>🥈 90% Compliance</h3>
+                        <p>Highly compliant combinations</p>
+                        <button class="btn" onclick="downloadFile('good')">Download</button>
+                    </div>
+                    <div class="download-card" id="acceptableCard">
+                        <h3>🥉 80% Compliance</h3>
+                        <p>Basically compliant combinations</p>
+                        <button class="btn" onclick="downloadFile('acceptable')">Download</button>
+                    </div>
+                    <div class="download-card" id="featuresCard">
+                        <h3>📋 Feature Data</h3>
+                        <p>Detailed feature analysis data</p>
+                        <button class="btn" onclick="downloadFile('features')">Download</button>
+                    </div>
+                </div>
+                
+                <!-- Result Statistics -->
+                <div id="statsSection" style="display: none;">
+                    <h3>📈 Result Statistics</h3>
+                    <div class="stats-grid" id="statsGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let statusInterval;
+        
+        // Form submission
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const runBtn = document.getElementById('runBtn');
+            
+            runBtn.disabled = true;
+            runBtn.textContent = 'Running...';
+            
+            try {
+                const response = await fetch('/upload_run', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.status === 'ok') {
+                    showStatus();
+                    startStatusPolling();
+                } else {
+                    showError(result.message);
+                }
+            } catch (error) {
+                showError('Request failed: ' + error.message);
+            } finally {
+                runBtn.disabled = false;
+                runBtn.textContent = '🚀 Start Screening';
+            }
+        });
+        
+        function showStatus() {
+            document.getElementById('statusSection').style.display = 'block';
+        }
+        
+        function showError(message) {
+            const statusSection = document.getElementById('statusSection');
+            statusSection.style.display = 'block';
+            statusSection.innerHTML = `
+                <h2>❌ Error</h2>
+                <div class="error-message">${message}</div>
+            `;
+        }
+        
+        function startStatusPolling() {
+            statusInterval = setInterval(updateStatus, 2000);
+            updateStatus();
+        }
+        
+        async function updateStatus() {
+            try {
+                const response = await fetch('/status');
+                const status = await response.json();
+                
+                updateStatusDisplay(status);
+                
+                if (!status.running) {
+                    clearInterval(statusInterval);
+                    if (status.ok) {
+                        showDownloadSection(status);
+                    }
+                }
+            } catch (error) {
+                console.error('Status update failed:', error);
+            }
+        }
+        
+        function updateStatusDisplay(status) {
+            const progressFill = document.getElementById('progressFill');
+            const statusText = document.getElementById('statusText');
+            const progressText = document.getElementById('progressText');
+            const logContainer = document.getElementById('logContainer');
+            
+            progressFill.style.width = status.progress + '%';
+            statusText.textContent = status.current_step || 'Running...';
+            
+            let progressInfo = `Progress: ${status.completed_steps}/${status.total_steps} (${status.progress.toFixed(1)}%)`;
+            if (status.estimated_remaining_formatted) {
+                progressInfo += ` | Est. remaining: ${status.estimated_remaining_formatted}`;
+            }
+            if (status.elapsed_time_formatted) {
+                progressInfo += ` | Elapsed: ${status.elapsed_time_formatted}`;
+            }
+            progressText.textContent = progressInfo;
+            
+            if (status.log_tail) {
+                logContainer.textContent = status.log_tail;
+                logContainer.scrollTop = logContainer.scrollHeight;
+            }
+            
+            if (status.error) {
+                statusText.innerHTML = `<div class="error-message">Error: ${status.error}</div>`;
+            }
+        }
+        
+        function showDownloadSection(status) {
+            const downloadSection = document.getElementById('downloadSection');
+            downloadSection.style.display = 'block';
+            
+            // Update download button status
+            updateDownloadButtons();
+            
+            // Show statistics
+            if (status.stats) {
+                showStats(status.stats);
+            }
+        }
+        
+        async function updateDownloadButtons() {
+            try {
+                const response = await fetch('/');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Get file existence status from server
+                const statusResponse = await fetch('/status');
+                const status = await statusResponse.json();
+
+                // Check if files exist
+                const fileChecks = {
+                    'recommendCard': 'rec_exists',
+                    'perfectCard': 'perfect_exists',
+                    'goodCard': 'good_exists',
+                    'acceptableCard': 'acceptable_exists',
+                    'featuresCard': 'formatted_exists'
+                };
+
+                for (const [cardId, fileKey] of Object.entries(fileChecks)) {
+                    const card = document.getElementById(cardId);
+                    if (!card) continue;
+                    
+                    const button = card.querySelector('button');
+                    if (!button) continue;
+
+                    // Check if file exists via HEAD request
+                    const fileMap = {
+                        'recommendCard': 'recommend',
+                        'perfectCard': 'perfect',
+                        'goodCard': 'good',
+                        'acceptableCard': 'acceptable',
+                        'featuresCard': 'features'
+                    };
+                    
+                    const fileType = fileMap[cardId];
+                    let fileExists = false;
+                    
+                    // Check file existence
+                    try {
+                        const headResponse = await fetch(`/download/${fileType}`, { method: 'HEAD' });
+                        fileExists = headResponse.ok;
+                    } catch (e) {
+                        fileExists = false;
+                    }
+
+                    // Show button if task succeeded and file exists; otherwise hide entire card
+                    if (status.ok && !status.running && fileExists) {
+                        button.disabled = false;
+                        button.textContent = 'Download';
+                        card.style.display = 'block';
+                        card.style.opacity = '1';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            } catch (error) {
+                console.error('Failed to update download button status:', error);
+            }
+        }
+        
+        function showStats(stats) {
+            const statsSection = document.getElementById('statsSection');
+            const statsGrid = document.getElementById('statsGrid');
+            
+            statsGrid.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-value">${stats.total_combinations}</div>
+                    <div class="stat-label">Total Combinations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${stats.tm_range[0].toFixed(1)}°C - ${stats.tm_range[1].toFixed(1)}°C</div>
+                    <div class="stat-label">Melting Point Range</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${stats.dh_range[0].toFixed(1)} - ${stats.dh_range[1].toFixed(1)} J/g</div>
+                    <div class="stat-label">Enthalpy Range</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${(stats.peak_prob_range[0] * 100).toFixed(1)}% - ${(stats.peak_prob_range[1] * 100).toFixed(1)}%</div>
+                    <div class="stat-label">Single Peak Probability</div>
+                </div>
+            `;
+            
+            statsSection.style.display = 'block';
+        }
+        
+        function downloadFile(type) {
+            window.location.href = `/download/${type}`;
+        }
+        
+        // Check status on page load
+        window.addEventListener('load', async function() {
+            await updateDownloadButtons();
+
+            // Check current status
+            try {
+                const response = await fetch('/status');
+                const status = await response.json();
+
+                if (status.running) {
+                    showStatus();
+                    startStatusPolling();
+                } else if (status.ok) {
+                    document.getElementById('downloadSection').style.display = 'block';
+                    await updateDownloadButtons();
+                }
+            } catch (error) {
+                console.error('Failed to get status:', error);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 23708904,
+    "RecordTitle": "Potassium fluoride dihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 42,
+    "Enthalpy_value_J_per_g": 162
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "FH4KO2",
+    "Molecular_Weight_g_per_mol": "94.127",
+    "Hydrogen_Bond_Donor_Count": 2,
+    "Hydrogen_Bond_Acceptor_Count": 3,
+    "Topological_Polar_Surface_Angstrom2": 2,
+    "Heavy_Atom_Count": 4
+  },
+  "identifiers": {
+    "IUPAC_Name": "potassium;fluoride;dihydrate",
+    "SMILES": "O.O.[F-].[K+]",
+    "InChI": "InChI=1S/FH.K.2H2O/h1H;;2*1H2/q;+1;;/p-1",
+    "InChIKey": "MZFXHSQFQLKKFD-UHFFFAOYSA-M"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5462222 (Potassium)",
+      "CID 962 (Water)",
+      "CID 14917 (Hydrofluoric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 4,
+    "Hydration_State": "dihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 2,
+    "Exact_Mass_Da": "93.98323901"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "KF·2H2O",
+    "Compound_Name": "Potassium fluoride dihydrate",
+    "Cation": "K+",
+    "Cation_Radius_Angstrom": 1.38,
+    "Anion": "F-",
+    "Hydration_Number": 2,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

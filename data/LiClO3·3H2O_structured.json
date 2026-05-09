@@ -1,0 +1,47 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 23709801,
+    "RecordTitle": "Lithium chlorate trihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 8.1,
+    "Enthalpy_value_J_per_g": 253
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H6ClLiO6",
+    "Molecular_Weight_g_per_mol": "160.5",
+    "Hydrogen_Bond_Donor_Count": 3,
+    "Hydrogen_Bond_Acceptor_Count": 7,
+    "Topological_Polar_Surface_Angstrom2": 77.3,
+    "Heavy_Atom_Count": 9
+  },
+  "identifiers": {
+    "IUPAC_Name": "lithium;chlorate;trihydrate",
+    "SMILES": "[Li+].O.O.O.[O-]Cl(=O)=O",
+    "InChI": "InChI=1S/ClHO3.Li.3H2O/c2-1(3)4;;;;/h(H,2,3,4);;3*1H2/q;+1;;;/p-1",
+    "InChIKey": "RTTBDBAJMWPBTI-UHFFFAOYSA-M"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "Water",
+      "Lithium chlorate"
+    ],
+    "Covalently_Bonded_Unit_Count": 5,
+    "Hydration_State": "trihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 118,
+    "Exact_Mass_Da": "144.0012940"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "LiClO3·3H2O",
+    "Compound_Name": "Lithium chlorate trihydrate",
+    "Cation": "Li+",
+    "Cation_Radius_Angstrom": 0.76,
+    "Anion": "ClO3-",
+    "Hydration_Number": 3,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

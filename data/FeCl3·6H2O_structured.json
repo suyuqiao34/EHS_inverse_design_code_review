@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 6093258,
+    "RecordTitle": "Ferric chloride hexahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 37,
+    "Enthalpy_value_J_per_g": 223
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "Cl3FeH12O6",
+    "Molecular_Weight_g_per_mol": "270.29",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 9,
+    "Topological_Polar_Surface_Angstrom2": 6,
+    "Heavy_Atom_Count": 10
+  },
+  "identifiers": {
+    "IUPAC_Name": "iron(3+);trichloride;hexahydrate",
+    "SMILES": "O.O.O.O.O.O.[Cl-].[Cl-].[Cl-].[Fe+3]",
+    "InChI": "InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3",
+    "InChIKey": "NQXWGWZJXJUMQB-UHFFFAOYSA-K"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 23925 (Iron)",
+      "CID 962 (Water)",
+      "CID 313 (Hydrochloric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 10,
+    "Hydration_State": "hexahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "268.904882"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "FeCl3·6H2O",
+    "Compound_Name": "Iron(III) chloride hexahydrate",
+    "Cation": "Fe3+",
+    "Cation_Radius_Angstrom": 0.645,
+    "Anion": "Cl-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

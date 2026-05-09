@@ -1,0 +1,47 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 17749109,
+    "RecordTitle": "Barium hydroxide octahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 78,
+    "Enthalpy_value_J_per_g": 265.7
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "BaH2O2.8H2O",
+    "Molecular_Weight_g_per_mol": "315.46",
+    "Hydrogen_Bond_Donor_Count": 10,
+    "Hydrogen_Bond_Acceptor_Count": 10,
+    "Topological_Polar_Surface_Angstrom2": 10,
+    "Heavy_Atom_Count": 11
+  },
+  "identifiers": {
+    "IUPAC_Name": "barium(2+);dihydroxide;octahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.[OH-].[OH-].[Ba+2]",
+    "InChI": "InChI=1S/Ba.10H2O/h;10*1H2/q+2;;;;;;;;;;/p-2",
+    "InChIKey": "ZUDYPQRUOYEARG-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5355457 (Barium)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 11,
+    "Hydration_State": "octahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "315.995244"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Ba(OH)2·8H2O",
+    "Compound_Name": "Barium hydroxide octahydrate",
+    "Cation": "Ba2+",
+    "Cation_Radius_Angstrom": 1.35,
+    "Anion": "OH-",
+    "Hydration_Number": 8,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

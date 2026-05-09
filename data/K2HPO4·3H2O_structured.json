@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 16217523,
+    "RecordTitle": "Potassium phosphate, dibasic, trihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 48,
+    "Enthalpy_value_J_per_g": 168
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H7K2O7P",
+    "Molecular_Weight_g_per_mol": "228.22",
+    "Hydrogen_Bond_Donor_Count": 4,
+    "Hydrogen_Bond_Acceptor_Count": 7,
+    "Topological_Polar_Surface_Angstrom2": 86.4,
+    "Heavy_Atom_Count": 10
+  },
+  "identifiers": {
+    "IUPAC_Name": "dipotassium;hydrogen phosphate;trihydrate",
+    "SMILES": "O.O.O.OP(=O)([O-])[O-].[K+].[K+]",
+    "InChI": "InChI=1S/2K.H3O4P.3H2O/c;;1-5(2,3)4;;;/h;;(H3,1,2,3,4);3*1H2/q2*+1;;;;/p-2",
+    "InChIKey": "XQGPKZUNMMFTAL-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5462222 (Potassium)",
+      "CID 1004 (Phosphoric Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 6,
+    "Hydration_State": "trihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 46.5,
+    "Exact_Mass_Da": "227.9203525"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "K2HPO4·3H2O",
+    "Compound_Name": "Potassium hydrogen phosphate trihydrate",
+    "Cation": "K+",
+    "Cation_Radius_Angstrom": 1.38,
+    "Anion": "HPO42-",
+    "Hydration_Number": 3,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

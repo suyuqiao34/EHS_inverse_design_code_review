@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 23688292,
+    "RecordTitle": "Lithium bromide dihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 34,
+    "Enthalpy_value_J_per_g": 124
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "BrH4LiO2",
+    "Molecular_Weight_g_per_mol": "122.9",
+    "Hydrogen_Bond_Donor_Count": 2,
+    "Hydrogen_Bond_Acceptor_Count": 3,
+    "Topological_Polar_Surface_Angstrom2": 2,
+    "Heavy_Atom_Count": 4
+  },
+  "identifiers": {
+    "IUPAC_Name": "lithium;bromide;dihydrate",
+    "SMILES": "[Li+].O.O.[Br-]",
+    "InChI": "InChI=1S/BrH.Li.2H2O/h1H;;2*1H2/q;+1;;/p-1",
+    "InChIKey": "GPIOUBQPSBZPFR-UHFFFAOYSA-M"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 3028194 (Lithium)",
+      "CID 260 (Hydrobromic Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 4,
+    "Hydration_State": "dihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 2,
+    "Exact_Mass_Da": "121.95547"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "LiBr·2H2O",
+    "Compound_Name": "Lithium bromide dihydrate",
+    "Cation": "Li+",
+    "Cation_Radius_Angstrom": 0.76,
+    "Anion": "Br-",
+    "Hydration_Number": 2,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

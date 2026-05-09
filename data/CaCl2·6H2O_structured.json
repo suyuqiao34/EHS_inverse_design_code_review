@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 6093252,
+    "RecordTitle": "Calcium Chloride Hexahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 29.5,
+    "Enthalpy_value_J_per_g": 170
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "CaCl2.6H2O",
+    "Molecular_Weight_g_per_mol": "219.07",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 8,
+    "Topological_Polar_Surface_Angstrom2": 6,
+    "Heavy_Atom_Count": 9
+  },
+  "identifiers": {
+    "IUPAC_Name": "calcium;dichloride;hexahydrate",
+    "SMILES": "O.O.O.O.O.O.[Cl-].[Cl-].[Ca+2]",
+    "InChI": "InChI=1S/Ca.2ClH.6H2O/h;2*1H;6*1H2/q+2;;;;;;;;/p-2",
+    "InChIKey": "QHFQAJHNDKBRBO-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 313 (Hydrochloric Acid)",
+      "CID 5460341 (Calcium)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": "hexahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "217.9636843"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "CaCl2·6H2O",
+    "Compound_Name": "Calcium Chloride Hexahydrate",
+    "Cation": "Ca2+",
+    "Cation_Radius_Angstrom": 1.0,
+    "Anion": "Cl-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

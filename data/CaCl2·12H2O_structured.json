@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 160429118,
+    "RecordTitle": "Calcium;dichloride;dodecahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 29.8,
+    "Enthalpy_value_J_per_g": 174
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "CaCl2H24O12",
+    "Molecular_Weight_g_per_mol": "327.17",
+    "Hydrogen_Bond_Donor_Count": 12,
+    "Hydrogen_Bond_Acceptor_Count": 14,
+    "Topological_Polar_Surface_Angstrom2": 12,
+    "Heavy_Atom_Count": 15
+  },
+  "identifiers": {
+    "IUPAC_Name": "calcium;dichloride;dodecahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.O.O.O.[Cl-].[Cl-].[Ca+2]",
+    "InChI": "InChI=1S/Ca.2ClH.12H2O/h;2*1H;12*1H2/q+2;;;;;;;;;;;;;;/p-2",
+    "InChIKey": "QIVRSYKSPQMIFN-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 313 (Hydrochloric Acid)",
+      "CID 5460341 (Calcium)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 15,
+    "Hydration_State": "calcium;dichloride;dodecahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "326.0270724"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "CaCl2·12H2O",
+    "Compound_Name": "Calcium;dichloride;dodecahydrate",
+    "Cation": "Ca2+",
+    "Cation_Radius_Angstrom": 1.0,
+    "Anion": "Cl-",
+    "Hydration_Number": 12,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}
