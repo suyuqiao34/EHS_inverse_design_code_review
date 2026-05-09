@@ -203,7 +203,7 @@ Supported values for `<which>`:
 
 ## License and Availability
 
-This repository is provided to support manuscript review and software reproducibility. Redistribution or reuse outside the peer-review process requires permission from the authors unless a separate public license is provided.
+This repository is provided to support manuscript review and software reproducibility. Redistribution, reuse, or modification outside manuscript review and reproducibility assessment requires permission from the authors unless a formal license is added later.
 
 ## Disclaimer
 
