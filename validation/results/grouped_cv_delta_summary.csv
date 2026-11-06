@@ -1,0 +1,8 @@
+task,scope,repeat_mean,repeat_std,fold_mean,fold_std,delta_MAE(updated-M0)_mean,delta_MAE(updated-M0)_std,delta_RMSE(updated-M0)_mean,delta_RMSE(updated-M0)_std,delta_R2(updated-M0)_mean,delta_R2(updated-M0)_std,delta_accuracy(updated-M0)_mean,delta_accuracy(updated-M0)_std,delta_roc_auc(updated-M0)_mean,delta_roc_auc(updated-M0)_std,delta_recall_nonSP(updated-M0)_mean,delta_recall_nonSP(updated-M0)_std
+Tm,Tm<0,1.0,0.8452,2.0,1.4639,-44.2396,6.9506,-43.7018,6.2067,105.2348,48.5884,,,,,,
+Tm,Tm>=0,1.0,0.8452,2.0,1.4639,-3.338,4.724,-3.3697,5.6101,0.4824,1.6303,,,,,,
+Tm,all_new,1.0,0.8452,2.0,1.4639,-20.0102,8.0492,-24.224,7.8126,2.9935,1.8458,,,,,,
+dH,Tm<0,1.0,0.8452,2.0,1.4639,-58.4369,25.8818,-58.3379,25.1511,2833.7456,10941.7172,,,,,,
+dH,Tm>=0,1.0,0.8452,2.0,1.4639,-50.2984,15.6483,-50.0255,16.7041,5.2371,3.2782,,,,,,
+dH,all_new,1.0,0.8452,2.0,1.4639,-54.9195,11.6763,-54.4615,10.7899,5.995,2.941,,,,,,
+single_peak,all_new,1.0,0.8452,2.0,1.4639,,,,,,,0.193,0.1076,0.203,0.1654,0.6136,0.0922

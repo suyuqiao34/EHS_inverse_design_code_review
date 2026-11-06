@@ -1,0 +1,51 @@
+{
+  "XGBoost": {
+    "n_estimators": 643,
+    "learning_rate": 0.07102731973724802,
+    "max_depth": 7,
+    "min_child_weight": 8,
+    "subsample": 0.8018497397679697,
+    "colsample_bytree": 0.8986701562394934,
+    "gamma": 2.329865598404251,
+    "reg_lambda": 0.11598360514875435,
+    "reg_alpha": 0.030135320760888637,
+    "random_state": 42,
+    "n_jobs": 1
+  },
+  "RF": {
+    "n_estimators": 799,
+    "max_depth": 20,
+    "min_samples_split": 6,
+    "min_samples_leaf": 9,
+    "bootstrap": true,
+    "max_features": null,
+    "random_state": 42,
+    "n_jobs": 1
+  },
+  "DT": {
+    "criterion": "gini",
+    "max_depth": 29,
+    "min_samples_split": 15,
+    "min_samples_leaf": 6,
+    "random_state": 42
+  },
+  "SVM": {
+    "C": 192.87381698797898,
+    "gamma": 0.0005202612012803345,
+    "random_state": 42
+  },
+  "LR": {
+    "solver": "lbfgs",
+    "C": 0.0023580258371267357,
+    "random_state": 42
+  },
+  "GBDT": {
+    "n_estimators": 357,
+    "learning_rate": 0.15096986695122686,
+    "max_depth": 8,
+    "subsample": 0.9077453623868852,
+    "min_samples_split": 20,
+    "min_samples_leaf": 9,
+    "random_state": 42
+  }
+}

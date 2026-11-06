@@ -1,0 +1,25 @@
+scheme,task,train,n_pred,accuracy,roc_auc,recall_nonSP,MAE,R2
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,66.0,,,,31.6292537878788,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,66.0,,,,11.322155795454545,0.6147068154836274
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,66.0,,,,115.51842685583865,-7.926660350276852
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,66.0,,,,39.20194162419348,-0.31740981689966336
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,171.0,0.4093567251461988,0.5206349206349206,0.0380952380952381,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,171.0,0.5909356725146199,0.6201154401154401,0.5938095238095238,,
+S2 leave-one-combination-out,single_peak,A literature only,171.0,0.4093567251461988,0.5206349206349206,0.0380952380952381,,
+S2 leave-one-combination-out,single_peak,B literature + remaining feedback,171.0,0.6198830409356725,0.6242424242424242,0.6571428571428571,,
+S2 leave-one-combination-out,Tm,A literature only,66.0,,,,31.6292537878788,-1.970785374226053
+S2 leave-one-combination-out,Tm,B literature + remaining feedback,66.0,,,,11.352618181818181,0.6145215870625009
+S2 leave-one-combination-out,dH,A literature only,66.0,,,,115.51842685583865,-7.926660350276853
+S2 leave-one-combination-out,dH,B literature + remaining feedback,66.0,,,,37.42385727737889,-0.16867849080351083
+S3 leave-one-anhydrous-combination-out,single_peak,A literature only,171.0,0.4093567251461988,0.5206349206349206,0.0380952380952381,,
+S3 leave-one-anhydrous-combination-out,single_peak,B literature + remaining feedback,171.0,0.6081871345029239,0.6340548340548341,0.6666666666666666,,
+S3 leave-one-anhydrous-combination-out,Tm,A literature only,66.0,,,,31.629253787878792,-1.9707853742260526
+S3 leave-one-anhydrous-combination-out,Tm,B literature + remaining feedback,66.0,,,,11.175129545454544,0.6165251658630602
+S3 leave-one-anhydrous-combination-out,dH,A literature only,66.0,,,,115.51842685583865,-7.926660350276849
+S3 leave-one-anhydrous-combination-out,dH,B literature + remaining feedback,66.0,,,,38.337228688326746,-0.200854995167441
+S4 leave-one-new-salt-out,single_peak,A literature only,190.0,0.3894736842105263,0.5348240469208211,0.06451612903225806,,
+S4 leave-one-new-salt-out,single_peak,B literature + remaining feedback,190.0,0.5736842105263158,0.6170576735092864,0.5403225806451613,,
+S4 leave-one-new-salt-out,Tm,A literature only,66.0,,,,30.76979318181819,-1.3041170651031169
+S4 leave-one-new-salt-out,Tm,B literature + remaining feedback,66.0,,,,11.713534848484842,0.6548090297967974
+S4 leave-one-new-salt-out,dH,A literature only,66.0,,,,115.13279241388493,-12.366659402948724
+S4 leave-one-new-salt-out,dH,B literature + remaining feedback,66.0,,,,41.54562726801091,-1.2034058207497846

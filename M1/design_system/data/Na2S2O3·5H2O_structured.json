@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 61475,
+    "RecordTitle": "Thiosulfuric acid, disodium salt, pentahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 48.5,
+    "Enthalpy_value_J_per_g": 197.5
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H10Na2O8S2",
+    "Molecular_Weight_g_per_mol": "248.19",
+    "Hydrogen_Bond_Donor_Count": 5,
+    "Hydrogen_Bond_Acceptor_Count": 9,
+    "Topological_Polar_Surface_Angstrom2": 109,
+    "Heavy_Atom_Count": 12
+  },
+  "identifiers": {
+    "IUPAC_Name": "disodium;dioxido-oxo-sulfanylidene-λ6-sulfane;pentahydrate",
+    "SMILES": "O.O.O.O.O.[O-]S(=O)(=S)[O-].[Na+].[Na+]",
+    "InChI": "InChI=1S/2Na.H2O3S2.5H2O/c;;1-5(2,3)4;;;;;/h;;(H2,1,2,3,4);5*1H2/q2*+1;;;;;;/p-2",
+    "InChIKey": "PODWXQQNRWNDGD-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 24478 (Thiosulfuric acid)",
+      "CID 5360545 (Sodium)"
+    ],
+    "Covalently_Bonded_Unit_Count": 8,
+    "Hydration_State": "pentahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 82.6,
+    "Exact_Mass_Da": "247.96124818"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na2S2O3·5H2O",
+    "Compound_Name": "Sodium thiosulfate pentahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "S2O32-",
+    "Hydration_Number": 5,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

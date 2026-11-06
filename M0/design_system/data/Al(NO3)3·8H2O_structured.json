@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 161211245,
+    "RecordTitle": "Aluminum;trinitrate;octahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 89.3,
+    "Enthalpy_value_J_per_g": 150
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "AlH16N3O17",
+    "Molecular_Weight_g_per_mol": "357.12",
+    "Hydrogen_Bond_Donor_Count": 8,
+    "Hydrogen_Bond_Acceptor_Count": 17,
+    "Topological_Polar_Surface_Angstrom2": 197,
+    "Heavy_Atom_Count": 21
+  },
+  "identifiers": {
+    "IUPAC_Name": "aluminum;trinitrate;octahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.O.O.O.O.[Al+3]",
+    "InChI": "InChI=1S/Al.3NO3.8H2O/c;3*2-1(3)4;;;;;;;;/h;;;;8*1H2/q+3;3*-1;;;;;;;;",
+    "InChIKey": "UWGKYHGTSBWUJD-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5359268 (Aluminum)",
+      "CID 944 (Nitric Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 12,
+    "Hydration_State": "aluminum;trinitrate;octahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "357.0295095"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Al(NO3)3·8H2O",
+    "Compound_Name": "Aluminum nitrate octahydrate",
+    "Cation": "Al3+",
+    "Cation_Radius_Angstrom": 0.535,
+    "Anion": "NO3-",
+    "Hydration_Number": 8,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

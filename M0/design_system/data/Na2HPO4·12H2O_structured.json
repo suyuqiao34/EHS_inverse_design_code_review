@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 61456,
+    "RecordTitle": "Sodium Phosphate, Dibasic, Dodecahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 38,
+    "Enthalpy_value_J_per_g": 263.5
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H25Na2O16P",
+    "Molecular_Weight_g_per_mol": "358.14",
+    "Hydrogen_Bond_Donor_Count": 13,
+    "Hydrogen_Bond_Acceptor_Count": 16,
+    "Topological_Polar_Surface_Angstrom2": 95.4,
+    "Heavy_Atom_Count": 19
+  },
+  "identifiers": {
+    "IUPAC_Name": "disodium;hydrogen phosphate;dodecahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.O.O.O.OP(=O)([O-])[O-].[Na+].[Na+]",
+    "InChI": "InChI=1S/2Na.H3O4P.12H2O/c;;1-5(2,3)4;;;;;;;;;;;;/h;;(H3,1,2,3,4);12*1H2/q2*+1;;;;;;;;;;;;;/p-2",
+    "InChIKey": "DGLRDKLJZLEJCY-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 1004 (Phosphoric Acid)",
+      "CID 5360545 (Sodium)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 15,
+    "Hydration_State": "dodecahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 46.5,
+    "Exact_Mass_Da": "358.06756027"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na2HPO4·12H2O",
+    "Compound_Name": "Disodium hydrogen phosphate dodecahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "HPO42-",
+    "Hydration_Number": 12,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

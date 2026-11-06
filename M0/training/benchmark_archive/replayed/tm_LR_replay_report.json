@@ -1,0 +1,36 @@
+{
+  "task": "tm",
+  "model": "LR",
+  "n": 186,
+  "n_features": 39,
+  "test_n": 38,
+  "n_runs": 100,
+  "model_params": null,
+  "lr_family": "ridge",
+  "alpha": 0.0484444636909247,
+  "l1_ratio": 0.5,
+  "max_abs_delta_vs_original": {
+    "r2_train": 4.057010283275986e-11,
+    "r2_test": 4.46599646153345e-10,
+    "rmse_train": 8.664313710937677e-10,
+    "rmse_test": 9.576180737269624e-09
+  },
+  "summary": {
+    "r2_train": {
+      "mean": 0.8723442663306986,
+      "std_ddof1": 0.011637261284683871
+    },
+    "r2_test": {
+      "mean": 0.8029090230769975,
+      "std_ddof1": 0.06178669048794187
+    },
+    "rmse_train": {
+      "mean": 5.930197405072411,
+      "std_ddof1": 0.2535089385793937
+    },
+    "rmse_test": {
+      "mean": 7.168926254177812,
+      "std_ddof1": 1.01568788301568
+    }
+  }
+}

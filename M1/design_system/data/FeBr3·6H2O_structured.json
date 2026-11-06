@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 173150315,
+    "RecordTitle": "CID 173150315"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 21,
+    "Enthalpy_value_J_per_g": 105
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "Br3FeH12O6",
+    "Molecular_Weight_g_per_mol": "403.65",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 9,
+    "Topological_Polar_Surface_Angstrom2": 6,
+    "Heavy_Atom_Count": 10
+  },
+  "identifiers": {
+    "IUPAC_Name": "iron(3+);tribromide;hexahydrate",
+    "SMILES": "O.O.O.O.O.O.[Fe+3].[Br-].[Br-].[Br-]",
+    "InChI": "InChI=1S/3BrH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3",
+    "InChIKey": "QDUFFVDHDBLUSO-UHFFFAOYSA-K"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 23925 (Iron)",
+      "CID 260 (Hydrobromic Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 10,
+    "Hydration_State": ""
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "402.75129"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "FeBr3·6H2O",
+    "Compound_Name": "Iron(III) bromide hexahydrate",
+    "Cation": "Fe3+",
+    "Cation_Radius_Angstrom": 0.645,
+    "Anion": "Br-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

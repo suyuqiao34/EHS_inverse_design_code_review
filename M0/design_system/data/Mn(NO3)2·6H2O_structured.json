@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 17814495,
+    "RecordTitle": "Manganese dinitrate hexahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 25.3,
+    "Enthalpy_value_J_per_g": 125.9
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H12MnN2O12",
+    "Molecular_Weight_g_per_mol": "287.04",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 12,
+    "Topological_Polar_Surface_Angstrom2": 132,
+    "Heavy_Atom_Count": 15
+  },
+  "identifiers": {
+    "IUPAC_Name": "manganese(2+);dinitrate;hexahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.O.O.[Mn+2]",
+    "InChI": "InChI=1S/Mn.2NO3.6H2O/c;2*2-1(3)4;;;;;;/h;;;6*1H2/q+2;2*-1;;;;;;",
+    "InChIKey": "YMKHJSXMVZVZNU-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 944 (Nitric Acid)",
+      "CID 23930 (Manganese)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": "hexahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "286.977067"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Mn(NO3)2·6H2O",
+    "Compound_Name": "Manganese(II) nitrate hexahydrate",
+    "Cation": "Mn2+",
+    "Cation_Radius_Angstrom": 0.83,
+    "Anion": "NO3-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 182616,
+    "RecordTitle": "Manganese nitrate tetrahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 37.1,
+    "Enthalpy_value_J_per_g": 115
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H8MnN2O10",
+    "Molecular_Weight_g_per_mol": "251.01",
+    "Hydrogen_Bond_Donor_Count": 4,
+    "Hydrogen_Bond_Acceptor_Count": 10,
+    "Topological_Polar_Surface_Angstrom2": 130,
+    "Heavy_Atom_Count": 13
+  },
+  "identifiers": {
+    "IUPAC_Name": "manganese(2+);dinitrate;tetrahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.[Mn+2]",
+    "InChI": "InChI=1S/Mn.2NO3.4H2O/c;2*2-1(3)4;;;;/h;;;4*1H2/q+2;2*-1;;;;",
+    "InChIKey": "ALIMWUQMDCBYFM-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 23930 (Manganese)",
+      "CID 944 (Nitric Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 7,
+    "Hydration_State": "tetrahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "250.955937"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Mn(NO3)2·4H2O",
+    "Compound_Name": "Manganese(II) nitrate tetrahydrate",
+    "Cation": "Mn2+",
+    "Cation_Radius_Angstrom": 0.83,
+    "Anion": "NO3-",
+    "Hydration_Number": 4,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

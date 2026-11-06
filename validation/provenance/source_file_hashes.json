@@ -1,0 +1,82 @@
+{
+  "provenance/classification_snapshot_counts.json": {
+    "source_id": "provenance/classification_snapshot_counts.json",
+    "source_bytes": 1460,
+    "source_sha256": "f848e1cd587ff1c433c20d0fd0b8a681335e5bf77c8244b26eadb49a85aa1bc7",
+    "archive_path": "validation/provenance/classification_snapshot_counts.json",
+    "bytes": 1460,
+    "sha256": "f848e1cd587ff1c433c20d0fd0b8a681335e5bf77c8244b26eadb49a85aa1bc7"
+  },
+  "provenance/classification_snapshot_mask.csv": {
+    "source_id": "provenance/classification_snapshot_mask.csv",
+    "source_bytes": 7666,
+    "source_sha256": "dca31e987e98229fcc31b8527efa8f7001bc8a7ee1bcb5d9475508c3e170aa29",
+    "archive_path": "validation/provenance/classification_snapshot_mask.csv",
+    "bytes": 7666,
+    "sha256": "dca31e987e98229fcc31b8527efa8f7001bc8a7ee1bcb5d9475508c3e170aa29"
+  },
+  "provenance/current_350_run/grouping_robustness.py": {
+    "source_id": "provenance/current_350_run/grouping_robustness.py",
+    "source_bytes": 7787,
+    "source_sha256": "43eea1169a052e7b5ceda1ef7c6e0d62419699e9a3b64e179e53bc1742e8fa5b",
+    "archive_path": "validation/provenance/current_350_run/grouping_robustness.py",
+    "bytes": 7787,
+    "sha256": "43eea1169a052e7b5ceda1ef7c6e0d62419699e9a3b64e179e53bc1742e8fa5b"
+  },
+  "provenance/current_350_run/grouping_robustness_results.csv": {
+    "source_id": "provenance/current_350_run/grouping_robustness_results.csv",
+    "source_bytes": 2977,
+    "source_sha256": "3991c71efcf0fc87ab6df7e1d632c5950d1585c1ff1ce65abf91030b21bb19dc",
+    "archive_path": "validation/provenance/current_350_run/grouping_robustness_results.csv",
+    "bytes": 2977,
+    "sha256": "3991c71efcf0fc87ab6df7e1d632c5950d1585c1ff1ce65abf91030b21bb19dc"
+  },
+  "provenance/original_20261027/grouping_robustness_original.py": {
+    "source_id": "provenance/original_20261027/grouping_robustness_original.py",
+    "source_bytes": 7423,
+    "source_sha256": "d53bbc9f5a4f6412693ef3e94fba0e044b199f3345af7aa586261860074a19a3",
+    "archive_path": "validation/provenance/original_20261027/grouping_robustness_original.py",
+    "bytes": 8013,
+    "sha256": "cd1955c9f9ea829d28303915d611ca96cf9151fa57126af710181c1ee5149ea1"
+  },
+  "provenance/original_20261027/grouping_robustness_s1_fold_counts.csv": {
+    "source_id": "provenance/original_20261027/grouping_robustness_s1_fold_counts.csv",
+    "source_bytes": 1384,
+    "source_sha256": "5a3c0cf50ee93b321fb28172f60d1c5dd2200dcb535312b08ba82f01564fdb5d",
+    "archive_path": "validation/provenance/original_20261027/grouping_robustness_s1_fold_counts.csv",
+    "bytes": 1384,
+    "sha256": "5a3c0cf50ee93b321fb28172f60d1c5dd2200dcb535312b08ba82f01564fdb5d"
+  },
+  "provenance/original_20261027/grouping_robustness_original_results.csv": {
+    "source_id": "provenance/original_20261027/grouping_robustness_original_results.csv",
+    "source_bytes": 2582,
+    "source_sha256": "741dc9f4983d66aa50e64b9f3b0e0a7768090f664563252f884aea97559f66e5",
+    "archive_path": "validation/provenance/original_20261027/grouping_robustness_original_results.csv",
+    "bytes": 2966,
+    "sha256": "3e7b0f4c40e9b0f2e9e9e798c33778e8127150f0c0c8ab0c36125bd4e4a565b0"
+  },
+  "data/round1/round1_all_records.csv": {
+    "source_id": "data/round1/round1_all_records.csv",
+    "source_bytes": 69113,
+    "source_sha256": "e6d30d2312e0a04889feb80b7439b0a6fc821fd12f8c228f1e0047876f0909a6",
+    "archive_path": "data/round1/round1_all_records.csv",
+    "bytes": 51273,
+    "sha256": "2f0a9e7aa792054de3d52225acfa429048ca2f78169734a082f5e50bc625b11a"
+  },
+  "data/round1/round1_single_peak.csv": {
+    "source_id": "data/round1/round1_single_peak.csv",
+    "source_bytes": 62332,
+    "source_sha256": "71bbf972192a6a05fc33ca6e6b09167391832dfde3317f51b63b3d28c76c9fc4",
+    "archive_path": "data/round1/round1_single_peak.csv",
+    "bytes": 62332,
+    "sha256": "71bbf972192a6a05fc33ca6e6b09167391832dfde3317f51b63b3d28c76c9fc4"
+  },
+  "M1/models/model_summary.csv": {
+    "source_id": "M1/models/model_summary.csv",
+    "source_bytes": 871,
+    "source_sha256": "b115aa27422ac9b38d352b2584334895bab1ab7ad636830da0da5ad0c134013c",
+    "archive_path": "M1/models/model_summary.csv",
+    "bytes": 871,
+    "sha256": "b115aa27422ac9b38d352b2584334895bab1ab7ad636830da0da5ad0c134013c"
+  }
+}

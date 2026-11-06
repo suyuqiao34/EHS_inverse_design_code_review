@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 3084150,
+    "RecordTitle": "Sodium pyrophosphate decahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 79.5,
+    "Enthalpy_value_J_per_g": 184
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H20Na4O17P2",
+    "Molecular_Weight_g_per_mol": "446.06",
+    "Hydrogen_Bond_Donor_Count": 10,
+    "Hydrogen_Bond_Acceptor_Count": 17,
+    "Topological_Polar_Surface_Angstrom2": 146,
+    "Heavy_Atom_Count": 23
+  },
+  "identifiers": {
+    "IUPAC_Name": "tetrasodium;phosphonato phosphate;decahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.O.[O-]P(=O)([O-])OP(=O)([O-])[O-].[Na+].[Na+].[Na+].[Na+]",
+    "InChI": "InChI=1S/4Na.H4O7P2.10H2O/c;;;;1-8(2,3)7-9(4,5)6;;;;;;;;;;/h;;;;(H2,1,2,3)(H2,4,5,6);10*1H2/q4*+1;;;;;;;;;;;/p-4",
+    "InChIKey": "VZWGHDYJGOMEKT-UHFFFAOYSA-J"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 1023 (Pyrophosphoric acid)",
+      "CID 5360545 (Sodium)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 15,
+    "Hydration_State": "decahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 124,
+    "Exact_Mass_Da": "445.97665029"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na4P2O7·10H2O",
+    "Compound_Name": "Tetrasodium pyrophosphate decahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "P2O74-",
+    "Hydration_Number": 10,
+    "Anion_Charge": -4,
+    "Anion_Is_Polyatomic": true
+  }
+}

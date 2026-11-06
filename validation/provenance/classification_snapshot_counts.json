@@ -1,0 +1,64 @@
+{
+  "collection_records": 350,
+  "collection_labels": {
+    "0": 194,
+    "1": 156
+  },
+  "classification_records": 349,
+  "classification_source_counts": {
+    "literature": 178,
+    "feedback": 171
+  },
+  "classification_labels": {
+    "0": 193,
+    "1": 156
+  },
+  "classification_excluded_row_indices": [
+    349
+  ],
+  "regression_label_counts": {
+    "Tm": 238,
+    "dH": 236
+  },
+  "features": [
+    "1-Tm (°C)",
+    "1-ΔHm (J/g)",
+    "1-Molecular Weight",
+    "1-Hydrogen Bond Donor Count",
+    "1-Hydrogen Bond Acceptor Count",
+    "1-Topological Polar Surface Area",
+    "1-Heavy Atom Count",
+    "1-Complexity",
+    "1-Covalently-Bonded Unit Count",
+    "1-Hydration Number",
+    "1-Elem_H",
+    "1-Elem_O",
+    "2-Tm (°C)",
+    "2-ΔHm (J/g)",
+    "2-Molecular Weight",
+    "2-Hydrogen Bond Donor Count",
+    "2-Hydrogen Bond Acceptor Count",
+    "2-Topological Polar Surface Area",
+    "2-Heavy Atom Count",
+    "2-Complexity",
+    "2-Covalently-Bonded Unit Count",
+    "2-Hydration Number",
+    "2-Elem_H",
+    "2-Elem_O",
+    "3-Tm (°C)",
+    "3-ΔHm (J/g)",
+    "3-Molecular Weight",
+    "3-Hydrogen Bond Donor Count",
+    "3-Hydrogen Bond Acceptor Count",
+    "3-Topological Polar Surface Area",
+    "3-Heavy Atom Count",
+    "3-Complexity",
+    "3-Covalently-Bonded Unit Count",
+    "3-Hydration Number",
+    "3-Elem_H",
+    "3-Elem_O",
+    "ID1",
+    "ID2",
+    "ID3"
+  ]
+}

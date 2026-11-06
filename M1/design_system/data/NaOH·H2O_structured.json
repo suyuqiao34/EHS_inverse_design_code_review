@@ -1,0 +1,47 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 23719242,
+    "RecordTitle": "Sodium hydroxide monohydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 64.3,
+    "Enthalpy_value_J_per_g": 273
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H3NaO2",
+    "Molecular_Weight_g_per_mol": "58.012",
+    "Hydrogen_Bond_Donor_Count": 2,
+    "Hydrogen_Bond_Acceptor_Count": 2,
+    "Topological_Polar_Surface_Angstrom2": 2,
+    "Heavy_Atom_Count": 3
+  },
+  "identifiers": {
+    "IUPAC_Name": "sodium;hydroxide;hydrate",
+    "SMILES": "O.[OH-].[Na+]",
+    "InChI": "InChI=1S/Na.2H2O/h;2*1H2/q+1;;/p-1",
+    "InChIKey": "JBJWASZNUJCEKT-UHFFFAOYSA-M"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 5360545 (Sodium)"
+    ],
+    "Covalently_Bonded_Unit_Count": 3,
+    "Hydration_State": "monohydrate"
+  },
+  "computed_properties": {
+    "Complexity": 2,
+    "Exact_Mass_Da": "58.00307362"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "NaOH·H2O",
+    "Compound_Name": "Sodium hydroxide monohydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "OH-",
+    "Hydration_Number": 1,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

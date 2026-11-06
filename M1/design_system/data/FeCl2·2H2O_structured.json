@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 168436557,
+    "RecordTitle": "Iron(2+);dichloride;dihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 56,
+    "Enthalpy_value_J_per_g": 90
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "Cl2FeH4O2",
+    "Molecular_Weight_g_per_mol": "162.78",
+    "Hydrogen_Bond_Donor_Count": 2,
+    "Hydrogen_Bond_Acceptor_Count": 4,
+    "Topological_Polar_Surface_Angstrom2": 2,
+    "Heavy_Atom_Count": 5
+  },
+  "identifiers": {
+    "IUPAC_Name": "iron(2+);dichloride;dihydrate",
+    "SMILES": "O.O.[Cl-].[Cl-].[Fe+2]",
+    "InChI": "InChI=1S/2ClH.Fe.2H2O/h2*1H;;2*1H2/q;;+2;;/p-2",
+    "InChIKey": "LLQVGQZFZSRDAV-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 23925 (Iron)",
+      "CID 313 (Hydrochloric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 5,
+    "Hydration_State": "iron(2+);dichloride;dihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "161.893770"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "FeCl2·2H2O",
+    "Compound_Name": "Iron(II) chloride dihydrate",
+    "Cation": "Fe2+",
+    "Cation_Radius_Angstrom": 0.61,
+    "Anion": "Cl-",
+    "Hydration_Number": 2,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

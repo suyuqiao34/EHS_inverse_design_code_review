@@ -1,0 +1,139 @@
+scheme,task,train,repeat,n_pred,accuracy,roc_auc,recall_nonSP,MAE,R2
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,0,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,0,171,0.5906432748538012,0.6076479076479078,0.6095238095238096,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,1,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,1,171,0.5555555555555556,0.584920634920635,0.5904761904761905,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,2,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,2,171,0.5964912280701754,0.6104617604617604,0.6095238095238096,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,3,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,3,171,0.6023391812865497,0.6178932178932179,0.638095238095238,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,4,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,4,171,0.5730994152046783,0.5942279942279941,0.6095238095238096,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,5,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,5,171,0.5380116959064327,0.5702020202020202,0.5142857142857142,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,6,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,6,171,0.5906432748538012,0.6513708513708514,0.5904761904761905,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,7,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,7,171,0.6023391812865497,0.6564213564213565,0.580952380952381,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,8,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,8,171,0.6023391812865497,0.6407647907647908,0.6285714285714286,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,9,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,9,171,0.6023391812865497,0.6493506493506493,0.6285714285714286,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,10,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,10,171,0.5555555555555556,0.577922077922078,0.6095238095238096,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,11,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,11,171,0.6140350877192983,0.6245310245310245,0.6190476190476191,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,12,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,12,171,0.6198830409356725,0.6555555555555556,0.638095238095238,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,13,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,13,171,0.631578947368421,0.6498556998556999,0.6285714285714286,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,14,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,14,171,0.5847953216374269,0.6405483405483405,0.638095238095238,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,15,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,15,171,0.5847953216374269,0.6146464646464647,0.5904761904761905,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,16,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,16,171,0.5789473684210527,0.6401154401154401,0.5333333333333333,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,17,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,17,171,0.5847953216374269,0.615007215007215,0.638095238095238,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,18,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,18,171,0.5964912280701754,0.6256854256854256,0.5238095238095238,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,A literature only,19,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S1 random 5-fold by salt combination (20 repeats),single_peak,B literature + remaining feedback,19,171,0.6257309941520468,0.6664502164502165,0.6190476190476191,,
+S2 leave-one-combination-out,single_peak,A literature only,0,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S2 leave-one-combination-out,single_peak,B literature + remaining feedback,0,171,0.5847953216374269,0.6216450216450217,0.580952380952381,,
+S3 leave-one-anhydrous-combination-out,single_peak,A literature only,0,171,0.391812865497076,0.524891774891775,0.0095238095238095,,
+S3 leave-one-anhydrous-combination-out,single_peak,B literature + remaining feedback,0,171,0.5789473684210527,0.6132756132756133,0.5904761904761905,,
+S4 leave-one-new-salt-out,single_peak,A literature only,0,190,0.3578947368421052,0.5648826979472141,0.0161290322580645,,
+S4 leave-one-new-salt-out,single_peak,B literature + remaining feedback,0,190,0.6,0.6351417399804496,0.5483870967741935,,
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,0,66,,,,31.629253787878792,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,0,66,,,,12.383612121212122,0.5620817320316215
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,1,66,,,,31.6292537878788,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,1,66,,,,11.110522727272729,0.6208525102460971
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,2,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,2,66,,,,10.758775757575751,0.6485675602811813
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,3,66,,,,31.6292537878788,-1.9707853742260533
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,3,66,,,,10.889283333333331,0.6521205420877063
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,4,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,4,66,,,,11.11054090909091,0.6129397085350216
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,5,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,5,66,,,,10.659485606060604,0.6453017470458409
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,6,66,,,,31.6292537878788,-1.970785374226052
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,6,66,,,,10.020071969696968,0.6682609930005347
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,7,66,,,,31.6292537878788,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,7,66,,,,10.895171212121214,0.6501473178108453
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,8,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,8,66,,,,12.027135606060606,0.5775453128659068
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,9,66,,,,31.6292537878788,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,9,66,,,,12.222282575757571,0.5595931122944264
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,10,66,,,,31.629253787878792,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,10,66,,,,11.158825757575755,0.6109259662089047
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,11,66,,,,31.6292537878788,-1.9707853742260533
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,11,66,,,,11.174090151515149,0.6283958394654796
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,12,66,,,,31.629253787878792,-1.970785374226054
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,12,66,,,,11.119556818181817,0.6334524760254712
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,13,66,,,,31.6292537878788,-1.9707853742260533
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,13,66,,,,10.853764393939391,0.627027188897072
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,14,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,14,66,,,,11.648502272727272,0.5744745885627076
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,15,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,15,66,,,,12.87459924242424,0.5411043093689933
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,16,66,,,,31.629253787878792,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,16,66,,,,11.636663636363636,0.6011108910331677
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,17,66,,,,31.62925378787881,-1.9707853742260528
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,17,66,,,,11.257771969696966,0.6140377086284519
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,18,66,,,,31.6292537878788,-1.970785374226054
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,18,66,,,,10.849668939393942,0.6640026289333325
+S1 random 5-fold by salt combination (20 repeats),Tm,A literature only,19,66,,,,31.6292537878788,-1.970785374226053
+S1 random 5-fold by salt combination (20 repeats),Tm,B literature + remaining feedback,19,66,,,,11.792790909090908,0.6021941763497847
+S2 leave-one-combination-out,Tm,A literature only,0,66,,,,31.629253787878792,-1.970785374226053
+S2 leave-one-combination-out,Tm,B literature + remaining feedback,0,66,,,,11.35261818181818,0.6145215870625009
+S3 leave-one-anhydrous-combination-out,Tm,A literature only,0,66,,,,31.6292537878788,-1.9707853742260533
+S3 leave-one-anhydrous-combination-out,Tm,B literature + remaining feedback,0,66,,,,11.175129545454544,0.6165251658630602
+S4 leave-one-new-salt-out,Tm,A literature only,0,66,,,,30.76979318181819,-1.3041170651031169
+S4 leave-one-new-salt-out,Tm,B literature + remaining feedback,0,66,,,,11.713534848484842,0.6548090297967974
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,0,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,0,66,,,,37.4181695279208,-0.2250521651663306
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,1,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,1,66,,,,39.462313694809424,-0.2926262461579321
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,2,66,,,,115.51842685583864,-7.926660350276853
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,2,66,,,,37.22307160579797,-0.1557488855044824
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,3,66,,,,115.51842685583864,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,3,66,,,,37.20302948229241,-0.1703181878574311
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,4,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,4,66,,,,36.90606630888852,-0.1912221596245684
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,5,66,,,,115.51842685583864,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,5,66,,,,41.531755838683154,-0.4370559566095842
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,6,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,6,66,,,,44.336209145748256,-0.7085547210514997
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,7,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,7,66,,,,39.36251104181463,-0.3451476032211782
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,8,66,,,,115.51842685583864,-7.926660350276849
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,8,66,,,,41.59543160409638,-0.4913437145819908
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,9,66,,,,115.51842685583868,-7.926660350276853
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,9,66,,,,37.33490950324319,-0.1990941097515386
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,10,66,,,,115.51842685583864,-7.926660350276853
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,10,66,,,,37.90936780264884,-0.2100909261662416
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,11,66,,,,115.51842685583864,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,11,66,,,,41.99013836138177,-0.5272173471608539
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,12,66,,,,115.51842685583864,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,12,66,,,,43.13806420355133,-0.5107391091978482
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,13,66,,,,115.51842685583864,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,13,66,,,,39.03406597383094,-0.3130745170802855
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,14,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,14,66,,,,40.18202671397816,-0.3632955059527607
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,15,66,,,,115.51842685583868,-7.926660350276849
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,15,66,,,,37.08195804364754,-0.1249633039956132
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,16,66,,,,115.51842685583868,-7.926660350276849
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,16,66,,,,36.36157739119096,-0.1360123577141032
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,17,66,,,,115.51842685583864,-7.926660350276853
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,17,66,,,,36.66291497779615,-0.2218477565975696
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,18,66,,,,115.51842685583864,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,18,66,,,,37.64303272940896,-0.1896094289169736
+S1 random 5-fold by salt combination (20 repeats),dH,A literature only,19,66,,,,115.51842685583868,-7.926660350276851
+S1 random 5-fold by salt combination (20 repeats),dH,B literature + remaining feedback,19,66,,,,41.66221853314024,-0.5351823356844814
+S2 leave-one-combination-out,dH,A literature only,0,66,,,,115.51842685583864,-7.926660350276853
+S2 leave-one-combination-out,dH,B literature + remaining feedback,0,66,,,,37.42385727737889,-0.1686784908035108
+S3 leave-one-anhydrous-combination-out,dH,A literature only,0,66,,,,115.51842685583864,-7.926660350276849
+S3 leave-one-anhydrous-combination-out,dH,B literature + remaining feedback,0,66,,,,38.337228688326746,-0.200854995167441
+S4 leave-one-new-salt-out,dH,A literature only,0,66,,,,115.13279241388491,-12.366659402948724
+S4 leave-one-new-salt-out,dH,B literature + remaining feedback,0,66,,,,41.54562726801091,-1.2034058207497846

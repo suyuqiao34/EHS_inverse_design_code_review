@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 20565568,
+    "RecordTitle": "Magnesium chloride tetrahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 58,
+    "Enthalpy_value_J_per_g": 178
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "Cl2H8MgO4",
+    "Molecular_Weight_g_per_mol": "167.27",
+    "Hydrogen_Bond_Donor_Count": 4,
+    "Hydrogen_Bond_Acceptor_Count": 6,
+    "Topological_Polar_Surface_Angstrom2": 4,
+    "Heavy_Atom_Count": 7
+  },
+  "identifiers": {
+    "IUPAC_Name": "magnesium;dichloride;tetrahydrate",
+    "SMILES": "O.O.O.O.[Mg+2].[Cl-].[Cl-]",
+    "InChI": "InChI=1S/2ClH.Mg.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2",
+    "InChIKey": "XEEYVTMVFJEEEY-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 5462224 (Magnesium)",
+      "CID 313 (Hydrochloric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 7,
+    "Hydration_State": "tetrahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "165.9650058"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "MgCl2·4H2O",
+    "Compound_Name": "Magnesium chloride tetrahydrate",
+    "Cation": "Mg2+",
+    "Cation_Radius_Angstrom": 0.72,
+    "Anion": "Cl-",
+    "Hydration_Number": 4,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 15865313,
+    "RecordTitle": "Zinc nitrate hexahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 36,
+    "Enthalpy_value_J_per_g": 150
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H12N2O12Zn",
+    "Molecular_Weight_g_per_mol": "297.5",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 12,
+    "Topological_Polar_Surface_Angstrom2": 132,
+    "Heavy_Atom_Count": 15
+  },
+  "identifiers": {
+    "IUPAC_Name": "zinc;dinitrate;hexahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.O.O.[Zn+2]",
+    "InChI": "InChI=1S/2NO3.6H2O.Zn/c2*2-1(3)4;;;;;;;/h;;6*1H2;/q2*-1;;;;;;;+2",
+    "InChIKey": "JGPSMWXKRPZZRG-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 23994 (Zinc)",
+      "CID 962 (Water)",
+      "CID 944 (Nitric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": "hexahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "295.968166"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Zn(NO3)2·6H2O",
+    "Compound_Name": "Zinc nitrate hexahydrate",
+    "Cation": "Zn2+",
+    "Cation_Radius_Angstrom": 0.74,
+    "Anion": "NO3-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

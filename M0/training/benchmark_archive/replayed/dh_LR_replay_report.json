@@ -1,0 +1,36 @@
+{
+  "task": "dh",
+  "model": "LR",
+  "n": 184,
+  "n_features": 39,
+  "test_n": 37,
+  "n_runs": 100,
+  "model_params": null,
+  "lr_family": "lasso",
+  "alpha": 0.096367074208356,
+  "l1_ratio": 0.5,
+  "max_abs_delta_vs_original": {
+    "r2_train": 8.595263389921115e-10,
+    "r2_test": 6.403572228030896e-09,
+    "rmse_train": 3.6011140736036396e-08,
+    "rmse_test": 1.4825724292677478e-07
+  },
+  "summary": {
+    "r2_train": {
+      "mean": 0.6277579975030637,
+      "std_ddof1": 0.02445920902048477
+    },
+    "r2_test": {
+      "mean": 0.47050443793447494,
+      "std_ddof1": 0.13462787348348323
+    },
+    "rmse_train": {
+      "mean": 30.82640442797224,
+      "std_ddof1": 1.1379215538895875
+    },
+    "rmse_test": {
+      "mean": 35.650768324144316,
+      "std_ddof1": 4.755414814090032
+    }
+  }
+}

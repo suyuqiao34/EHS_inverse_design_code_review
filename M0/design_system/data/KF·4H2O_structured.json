@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 23698049,
+    "RecordTitle": "Potassium fluoride tetrahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 18.5,
+    "Enthalpy_value_J_per_g": 231
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "FH8KO4",
+    "Molecular_Weight_g_per_mol": "130.16",
+    "Hydrogen_Bond_Donor_Count": 4,
+    "Hydrogen_Bond_Acceptor_Count": 5,
+    "Topological_Polar_Surface_Angstrom2": 4,
+    "Heavy_Atom_Count": 6
+  },
+  "identifiers": {
+    "IUPAC_Name": "potassium;fluoride;tetrahydrate",
+    "SMILES": "O.O.O.O.[F-].[K+]",
+    "InChI": "InChI=1S/FH.K.4H2O/h1H;;4*1H2/q;+1;;;;/p-1",
+    "InChIKey": "ZDFIYJXWUJGATP-UHFFFAOYSA-M"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5462222 (Potassium)",
+      "CID 962 (Water)",
+      "CID 14917 (Hydrofluoric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 6,
+    "Hydration_State": "tetrahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 2,
+    "Exact_Mass_Da": "130.00436838"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "KF·4H2O",
+    "Compound_Name": "Potassium fluoride tetrahydrate",
+    "Cation": "K+",
+    "Cation_Radius_Angstrom": 1.38,
+    "Anion": "F-",
+    "Hydration_Number": 4,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

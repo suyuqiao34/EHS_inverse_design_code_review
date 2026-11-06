@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 53249709,
+    "RecordTitle": "CID 53249709"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 34.3,
+    "Enthalpy_value_J_per_g": 116
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "Br2CaH12O6",
+    "Molecular_Weight_g_per_mol": "307.98",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 8,
+    "Topological_Polar_Surface_Angstrom2": 6,
+    "Heavy_Atom_Count": 9
+  },
+  "identifiers": {
+    "IUPAC_Name": "calcium;dibromide;hexahydrate",
+    "SMILES": "O.O.O.O.O.O.[Ca+2].[Br-].[Br-]",
+    "InChI": "InChI=1S/2BrH.Ca.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2",
+    "InChIKey": "QSHXZNJVLUEIHK-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5460341 (Calcium)",
+      "CID 260 (Hydrobromic Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": ""
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "307.86060"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "CaBr2·6H2O",
+    "Compound_Name": "Calcium bromide hexahydrate",
+    "Cation": "Ca2+",
+    "Cation_Radius_Angstrom": 1.0,
+    "Anion": "Br-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

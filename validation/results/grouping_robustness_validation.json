@@ -1,0 +1,143 @@
+{
+  "historical_rows": 24,
+  "rerun_rows": 24,
+  "historical_vs_rerun_max_difference": {
+    "n_pred": 0.0,
+    "accuracy": 0.0,
+    "roc_auc": 0.0,
+    "recall_nonSP": 0.0,
+    "MAE": 1.4210854715202004e-14,
+    "R2": 4.440892098500626e-16
+  },
+  "predictions_vs_pooled_metrics_max_difference": {
+    "n_pred": 0.0,
+    "accuracy": 5.551115123125783e-17,
+    "roc_auc": 1.1102230246251565e-16,
+    "recall_nonSP": 2.42861286636753e-17,
+    "MAE": 2.842170943040401e-14,
+    "R2": 1.7763568394002505e-15
+  },
+  "prediction_rows": 13976,
+  "classification_n_train_literature": [
+    173,
+    176,
+    178
+  ],
+  "manifests": {
+    "single_peak": {
+      "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "sklearn": "1.5.0",
+      "xgboost": "2.0.3",
+      "seed": 42,
+      "tasks": [
+        "single_peak"
+      ],
+      "parameters": {
+        "single_peak": {
+          "n_estimators": 1000,
+          "learning_rate": 0.1281484917492938,
+          "max_depth": 7,
+          "subsample": 0.7318613286337653,
+          "min_samples_split": 20,
+          "min_samples_leaf": 15,
+          "max_features": 0.32356396790352
+        }
+      },
+      "files": {
+        "data\\round1\\round1_all_records.csv": "e6d30d2312e0a04889feb80b7439b0a6fc821fd12f8c228f1e0047876f0909a6",
+        "data\\round1\\round1_single_peak.csv": "71bbf972192a6a05fc33ca6e6b09167391832dfde3317f51b63b3d28c76c9fc4",
+        "M1\\models\\model_summary.csv": "b115aa27422ac9b38d352b2584334895bab1ab7ad636830da0da5ad0c134013c"
+      },
+      "script_sha256": "c7210799184b7097d34bac6cbefc82d00ff00d284e8175cd4fc15bed1db5e6c9",
+      "n_collection": 350,
+      "n_classification": 349,
+      "n_classification_literature": 178,
+      "n_classification_feedback": 171,
+      "collection_rows_not_in_classification_snapshot": [
+        349
+      ],
+      "new_salt_count": 13,
+      "note": "Historical S7b classification snapshot; S7a main analysis uses all 350 collection labels."
+    },
+    "Tm": {
+      "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "sklearn": "1.5.0",
+      "xgboost": "2.0.3",
+      "seed": 42,
+      "tasks": [
+        "Tm"
+      ],
+      "parameters": {
+        "Tm": {
+          "n_estimators": 200,
+          "max_depth": 36,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": 0.13744036082915323,
+          "bootstrap": false
+        }
+      },
+      "files": {
+        "data\\round1\\round1_all_records.csv": "e6d30d2312e0a04889feb80b7439b0a6fc821fd12f8c228f1e0047876f0909a6",
+        "data\\round1\\round1_single_peak.csv": "71bbf972192a6a05fc33ca6e6b09167391832dfde3317f51b63b3d28c76c9fc4",
+        "M1\\models\\model_summary.csv": "b115aa27422ac9b38d352b2584334895bab1ab7ad636830da0da5ad0c134013c"
+      },
+      "script_sha256": "c7210799184b7097d34bac6cbefc82d00ff00d284e8175cd4fc15bed1db5e6c9",
+      "n_collection": 350,
+      "n_classification": 349,
+      "n_classification_literature": 178,
+      "n_classification_feedback": 171,
+      "collection_rows_not_in_classification_snapshot": [
+        349
+      ],
+      "new_salt_count": 13,
+      "note": "Historical S7b classification snapshot; S7a main analysis uses all 350 collection labels."
+    },
+    "dH": {
+      "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "sklearn": "1.5.0",
+      "xgboost": "2.0.3",
+      "seed": 42,
+      "tasks": [
+        "dH"
+      ],
+      "parameters": {
+        "dH": {
+          "n_estimators": 1200,
+          "learning_rate": 0.044336823248818,
+          "max_depth": 7,
+          "min_child_weight": 3,
+          "subsample": 0.9034760394117362,
+          "colsample_bytree": 0.3766502525728244,
+          "gamma": 4.575995111562802,
+          "reg_lambda": 10.536560930129717,
+          "reg_alpha": 0.049820554189305484
+        }
+      },
+      "files": {
+        "data\\round1\\round1_all_records.csv": "e6d30d2312e0a04889feb80b7439b0a6fc821fd12f8c228f1e0047876f0909a6",
+        "data\\round1\\round1_single_peak.csv": "71bbf972192a6a05fc33ca6e6b09167391832dfde3317f51b63b3d28c76c9fc4",
+        "M1\\models\\model_summary.csv": "b115aa27422ac9b38d352b2584334895bab1ab7ad636830da0da5ad0c134013c"
+      },
+      "script_sha256": "c7210799184b7097d34bac6cbefc82d00ff00d284e8175cd4fc15bed1db5e6c9",
+      "n_collection": 350,
+      "n_classification": 349,
+      "n_classification_literature": 178,
+      "n_classification_feedback": 171,
+      "collection_rows_not_in_classification_snapshot": [
+        349
+      ],
+      "new_salt_count": 13,
+      "note": "Historical S7b classification snapshot; S7a main analysis uses all 350 collection labels."
+    }
+  }
+}

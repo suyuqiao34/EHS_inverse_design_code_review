@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 61630,
+    "RecordTitle": "Nickel nitrate hexahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 57,
+    "Enthalpy_value_J_per_g": 169
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H12N2NiO12",
+    "Molecular_Weight_g_per_mol": "290.80",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 12,
+    "Topological_Polar_Surface_Angstrom2": 132,
+    "Heavy_Atom_Count": 15
+  },
+  "identifiers": {
+    "IUPAC_Name": "nickel(2+);dinitrate;hexahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.O.O.[Ni+2]",
+    "InChI": "InChI=1S/2NO3.Ni.6H2O/c2*2-1(3)4;;;;;;;/h;;;6*1H2/q2*-1;+2;;;;;;",
+    "InChIKey": "AOPCKOPZYFFEDA-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 944 (Nitric Acid)",
+      "CID 962 (Water)",
+      "CID 935 (Nickel)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": "hexahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "289.974365"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Ni(NO3)2·6H2O",
+    "Compound_Name": "Nickel nitrate hexahydrate",
+    "Cation": "Ni2+",
+    "Cation_Radius_Angstrom": 0.69,
+    "Anion": "NO3-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

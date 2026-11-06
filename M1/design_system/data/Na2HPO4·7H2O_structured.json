@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 6096963,
+    "RecordTitle": "Sodium Phosphate, Dibasic, Heptahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 48,
+    "Enthalpy_value_J_per_g": 150
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H15Na2O11P",
+    "Molecular_Weight_g_per_mol": "268.07",
+    "Hydrogen_Bond_Donor_Count": 8,
+    "Hydrogen_Bond_Acceptor_Count": 11,
+    "Topological_Polar_Surface_Angstrom2": 90.4,
+    "Heavy_Atom_Count": 14
+  },
+  "identifiers": {
+    "IUPAC_Name": "disodium;hydrogen phosphate;heptahydrate",
+    "SMILES": "O.O.O.O.O.O.O.OP(=O)([O-])[O-].[Na+].[Na+]",
+    "InChI": "InChI=1S/2Na.H3O4P.7H2O/c;;1-5(2,3)4;;;;;;;/h;;(H3,1,2,3,4);7*1H2/q2*+1;;;;;;;;/p-2",
+    "InChIKey": "PYLIXCKOHOHGKQ-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5360545 (Sodium)",
+      "CID 1004 (Phosphoric Acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 10,
+    "Hydration_State": "heptahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 46.5,
+    "Exact_Mass_Da": "268.01473685"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na2HPO4·7H2O",
+    "Compound_Name": "Disodium hydrogen phosphate heptahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "HPO42-",
+    "Hydration_Number": 7,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

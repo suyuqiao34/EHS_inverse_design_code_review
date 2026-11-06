@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 129651212,
+    "RecordTitle": "Magnesium nitrate tetrahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 47,
+    "Enthalpy_value_J_per_g": 142
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H8MgN2O10",
+    "Molecular_Weight_g_per_mol": "220.38",
+    "Hydrogen_Bond_Donor_Count": 4,
+    "Hydrogen_Bond_Acceptor_Count": 10,
+    "Topological_Polar_Surface_Angstrom2": 130,
+    "Heavy_Atom_Count": 13
+  },
+  "identifiers": {
+    "IUPAC_Name": "magnesium;dinitrate;tetrahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.[Mg+2]",
+    "InChI": "InChI=1S/Mg.2NO3.4H2O/c;2*2-1(3)4;;;;/h;;;4*1H2/q+2;2*-1;;;;",
+    "InChIKey": "SEGOJYCSWLUCKJ-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 5462224 (Magnesium)",
+      "CID 944 (Nitric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 7,
+    "Hydration_State": "tetrahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "220.0029361"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Mg(NO3)2·4H2O",
+    "Compound_Name": "Magnesium nitrate tetrahydrate",
+    "Cation": "Mg2+",
+    "Cation_Radius_Angstrom": 0.72,
+    "Anion": "NO3-",
+    "Hydration_Number": 4,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

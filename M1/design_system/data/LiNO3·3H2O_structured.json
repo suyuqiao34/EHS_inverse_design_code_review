@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 21889635,
+    "RecordTitle": "Lithium nitrate--water (1/1/3)"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 30.1,
+    "Enthalpy_value_J_per_g": 296
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H6LiNO6",
+    "Molecular_Weight_g_per_mol": "123.0",
+    "Hydrogen_Bond_Donor_Count": 3,
+    "Hydrogen_Bond_Acceptor_Count": 6,
+    "Topological_Polar_Surface_Angstrom2": 65.9,
+    "Heavy_Atom_Count": 8
+  },
+  "identifiers": {
+    "IUPAC_Name": "lithium;nitrate;trihydrate",
+    "SMILES": "[Li+].[N+](=O)([O-])[O-].O.O.O",
+    "InChI": "InChI=1S/Li.NO3.3H2O/c;2-1(3)4;;;/h;;3*1H2/q+1;-1;;;",
+    "InChIKey": "IEMMJPTUSSWOND-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 944 (Nitric Acid)",
+      "CID 962 (Water)",
+      "CID 3028194 (Lithium)"
+    ],
+    "Covalently_Bonded_Unit_Count": 5,
+    "Hydration_State": ""
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "123.03551535"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "LiNO3·3H2O",
+    "Compound_Name": "Lithium nitrate trihydrate",
+    "Cation": "Li+",
+    "Cation_Radius_Angstrom": 0.76,
+    "Anion": "NO3-",
+    "Hydration_Number": 3,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

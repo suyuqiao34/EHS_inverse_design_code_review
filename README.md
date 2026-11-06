@@ -1,223 +1,179 @@
-# EHS Inverse Design Code and Reproducibility Package
+# Multi-agent inverse design of eutectic hydrated salts
 
-## Overview
+Code, data and trained models accompanying the manuscript
 
-This repository provides the source code, trained machine-learning models, example input data, representative output files, and selected figure-reproduction materials associated with the manuscript:
+> **Integrating chemical reasoning and property prediction for multi-agent discovery of eutectic hydrated salts**
+> Y. Su, Z. Liu, Z. Zhang, H. Gao, Z. Sun, X. Jin, Y. Zhang, Z. Huang, L. Yu, J. Ding, J. Li, X. Wang, G. Wang
 
-**Inverse Design of Eutectic Hydrated Salts via Logic-Driven Multi-Agent Framework: Mapping the Melting Point–Enthalpy Landscape**
+The workflow combines LLM-based chemical-compatibility agents (DashScope `qwen-plus`) with a hierarchical
+property predictor (single-peak classifier, then melting temperature *T*<sub>m</sub> and melting enthalpy
+Δ*H*<sub>m</sub> regressors) to propose binary and ternary eutectic hydrated salts that meet user-defined thermal
+targets. It was run in two design–test–learn rounds:
 
-The repository is made publicly accessible to facilitate editorial and peer-review assessment and to support reproducibility of the main computational workflow.
+| Round | Predictive module | Training data | Design system in this repository |
+|---|---|---|---|
+| 0 | **M0**: XGBoost classifier, GBDT (*T*<sub>m</sub>), SVR (Δ*H*<sub>m</sub>) | literature records (`data/round0`) | `M0/design_system` |
+| 1 | **M1**: GBDT classifier, random forest (*T*<sub>m</sub>), XGBoost (Δ*H*<sub>m</sub>) | literature records + 171 feedback experiments (`data/round1`) | `M1/design_system` |
 
-The included workflow is designed to identify candidate eutectic hydrated salt combinations under user-specified thermal targets. It accepts a CSV file containing hydrated-salt descriptors, parses target melting point (`Tm`) and phase-change enthalpy (`ΔHm`) constraints, performs multi-stage candidate selection and model-based prediction, and exports ranked result files for further analysis.
+## Repository structure
 
-## Repository Structure
+```
+data/                          datasets (see data/README.md)
+  pure_hydrated_salts_dataset.csv   62-entry pure hydrated-salt library (final version)
+  round0/                      Round-0 training data of M0
+  round1/                      Round-1 dataset (350 records) and the M1 training files
+M0/
+  models/                      frozen M0 models + MD5SUMS.txt
+  training/                    algorithm comparison and final refit of M0; original results
+  design_system/               multi-agent design system used in Round 0 (loads ../models)
+M1/
+  models/                      frozen M1 models, model_summary.csv (hyperparameters) + MD5SUMS.txt
+  training/                    algorithm comparison and final refit of M1; original results
+  design_system/               multi-agent design system used in Round 1 (loads ../models)
+validation/                    grouped validation of the feedback gain; results/ holds the outputs
+figure/                        plotting scripts for Fig. 7a, b, c and g; data/ holds the Fig. 7g summary
+```
 
-- `app.py`: Flask application entry point and web routes.
-- `multi_agent_selector.py`: core multi-agent screening workflow.
-- `salt_combination_generator.py`: feature construction, model loading, prediction utilities, and compatibility-related helper functions.
-- `strategy_selector.py`: rule-based candidate pre-screening strategy.
-- `apply_compatibility_bonus_standalone.py`: post-processing module for compatibility-weighted reranking.
-- `templates/index.html`: web interface.
-- `data/`: structured metadata for hydrated salts (`*_structured.json`).
-- `pure_hydrated_salts_dataset.csv`: default/example input dataset.
-- `eutectic_data_single_peak.csv`: processed eutectic dataset with single-peak labels.
-- `eutectic_data_tm.csv`: processed eutectic dataset with melting-temperature (`Tm`) values.
-- `eutectic_data_dh.csv`: processed eutectic dataset with phase-change enthalpy (`ΔHm`) values.
-- `agent_recommended_results.csv`: representative example output file.
-- `best model/`: trained prediction models used by the current screening workflow.
-- `figure_reproduction/reproduce_key_figures.ipynb`: Jupyter notebook for reproducing selected manuscript-related visualizations from the processed datasets and exported screening results.
-- `figure_reproduction/`: processed CSV/XLSX files used as figure-input data for the visualization notebook.
-- `requirements.txt`: pinned Python dependencies for running the screening system.
-- `requirements-visualization.txt`: additional dependencies for running the figure-reproduction notebook.
-- `.env.example`: environment-variable template for API configuration.
-- `start_system.bat`: Windows launcher for convenient local reproduction.
+The two design systems share the same agent architecture. The M1 system differs from the M0 system only in
+(i) the predictive models it loads and (ii) parsing of signed and range targets (for example, sub-zero
+*T*<sub>m</sub> targets) in `multi_agent_selector.py`. Each system carries the salt library and the structured
+salt metadata (`data/*_structured.json`) that it used; the M1 copies contain corrected entries for
+Co(NO3)2·6H2O, LiClO3·3H2O and Na2S2O3·5H2O (see `data/README.md`).
 
-## System Requirements
+## System requirements
 
-- Operating system tested by the authors: Windows 10/11
-- Python tested by the authors: Python 3.11.7
-- Recommended Python version: Python 3.9 or later
-- Network access is required for the DashScope/Qwen API calls used by the multi-agent screening workflow.
-- No non-standard hardware is required for the provided demo.
+* Tested on Windows 10/11 (64-bit) with Python 3.11.7; the code uses only cross-platform packages.
+* Dependencies (pinned in `requirements.txt`): scikit-learn 1.5.0, XGBoost 2.0.3, NumPy 1.26.4, pandas 2.1.4,
+  joblib 1.5.2, Flask 3.1.2, DashScope 1.25.0, Optuna 4.0.0, SciPy 1.14.1, statsmodels 0.14.0, Matplotlib 3.8.0.
+  The pickled models require the pinned scikit-learn and XGBoost versions.
+* No special hardware is required. The design systems need internet access and a DashScope API key for the LLM agents.
+* Figures use the Times New Roman font; Matplotlib falls back to a default font if it is not installed.
 
 ## Installation
 
-From the project root directory, create and activate a Python environment, then install the pinned dependencies:
-
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate          # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Typical installation time on a normal desktop computer is expected to be several minutes, depending on network speed and Python package cache status.
+Installation takes a few minutes on a standard desktop computer.
 
-## External API Configuration
+## Running a design system (demo)
 
-The multi-agent workflow calls DashScope (`qwen-plus`). Set the API key as an environment variable before running the web service.
-
-PowerShell:
+The LLM agents call the DashScope API. The key is read from the environment variable `DASHSCOPE_API_KEY`
+and is not stored in the repository.
 
 ```powershell
-$env:DASHSCOPE_API_KEY="your_dashscope_api_key_here"
+$env:DASHSCOPE_API_KEY = "<your DashScope API key>"     # Command Prompt: set DASHSCOPE_API_KEY=<key>
+cd M1/design_system                                    # or M0/design_system
+python app.py                                          # or double-click start_system.bat on Windows
 ```
 
-Command Prompt:
+Open <http://127.0.0.1:5000>, upload `pure_hydrated_salts_dataset.csv` from the same folder, enter the target
+*T*<sub>m</sub> (°C) and Δ*H*<sub>m</sub> (J g<sup>-1</sup>), for example `14` and `180`, and start the task.
+Targets may be single values, ranges (`20-30`) or thresholds (`>150`); the M1 system also accepts negative
+targets (`-10`). A run takes from several minutes to tens of minutes, mainly depending on DashScope latency.
 
-```bat
-set DASHSCOPE_API_KEY=your_dashscope_api_key_here
-```
+Outputs are written to the design-system folder and can be downloaded from the web page:
 
-Do not put a real API key into the source code. `.env.example` is provided only as a template.
+| File | Content |
+|---|---|
+| `agent_recommended_results.csv` | ranked candidates: `salt_a/b/c`, `ratio_a/b/c` (mass fractions), `tm_pred`, `dh_pred`, `single_peak_proba`, compliance level and score |
+| `results_{perfect,good,acceptable}_compliance.csv` | candidates grouped by compliance with the targets |
+| `salt_combinations_formatted.csv` | model-input features of all evaluated combinations |
 
-## Included Trained Models
+`example_output/` in each system contains the files produced for the demo target (14 °C, 180 J g<sup>-1</sup>).
+Because the agents call an external LLM, the candidate list and its order can change between runs; the
+property predictions for a given formulation are deterministic. Without an API key the web service starts,
+but the LLM agents are unavailable.
 
-The trained models used by the current screening workflow are included in `best model/`:
+Any salt library with the columns of `pure_hydrated_salts_dataset.csv` (`ID` followed by the 12 descriptors)
+can be uploaded. Salts without a matching `data/<ID>_structured.json` file lack the ion information used by
+the compatibility rules.
 
-- `best model/single_peak_XGBoost_best_model_from_roc_redraw.pkl`: single-peak classification model.
-- `best model/tm_gbdt_best_model.pkl`: melting-temperature (`Tm`) regression model.
-- `best model/dh_svm_best_model.pkl`: phase-change enthalpy (`ΔHm`) regression model.
-
-These models correspond to the hierarchical prediction workflow used in the manuscript: single-peak gating, melting-temperature prediction, and enthalpy prediction.
-
-## Demo Input
-
-Use the included example input file:
-
-- `pure_hydrated_salts_dataset.csv`
-
-This public repository contains a representative processed pure hydrated salt dataset sufficient for running and testing the demo workflow. The full raw source datasets, additional data-curation details, and large-scale prediction-space files are available from the corresponding author upon reasonable request.
-
-Suggested demo target values:
-
-- Target melting point (`Tm`): `14`
-- Target enthalpy (`ΔHm`): `180`
-
-## Running the Demo
-
-### Option 1: Windows Launcher
-
-Run:
-
-```bat
-start_system.bat
-```
-
-### Option 2: Command Line
-
-Start the local web service:
+## Reproducing the models
 
 ```bash
-python app.py
+cd M1/training
+python refit_final_models.py               # seconds: refits the three M1 models from model_summary.csv
+python train_single_peak.py                # full Optuna comparison of six classifiers
+python train_regression.py --task tm       # full comparison for Tm (use --task dh for dHm)
+
+cd ../../M0/training
+python fit_final_models.py                 # refits the three M0 models
+python compare_algorithms.py --task all    # a new Optuna search on the recovered evaluation row order
+python compare_composition_baselines.py    # archived composition-weighted baseline analysis
+python benchmark_archive/reproduce_m0_benchmark.py aggregate  # aggregate original regression runs
 ```
 
-Open the web interface:
+`refit_final_models.py` reproduces the frozen M1 models exactly (maximum prediction difference 0). For M0, the
+SVR refit is exact. The M0 XGBoost and GBDT models were originally fitted without a fixed random seed, so a refit
+agrees only approximately (maximum differences on the training records of 0.05 in single-peak probability and 0.52 °C in *T*<sub>m</sub>). The frozen files in
+`M0/models` are the models used in the paper. The Round-0 algorithm comparison did not fix the Optuna sampler
+seed, so a rerun gives similar but not identical hyperparameters. The original comparison tables are provided in
+`M0/training/results` and `M1/training/results`. The M0 regression tables aggregate the archived 100-run results, including the
+linear-family reconstruction. See [M0 benchmark instructions](M0/training/README_benchmark.md)
+for replay commands and [analysis snapshots and reproducibility](M0/training/reproduction_status.md)
+for input files, statistical definitions and replay configurations.
+A full comparison can take several hours on a desktop CPU. Documented portable
+rerun commands write to `results_rerun/` or `refit/`, leaving the supplied results unchanged.
 
-- `http://localhost:5000`
-
-In the web interface:
-
-1. Upload `pure_hydrated_salts_dataset.csv`.
-2. Enter `14` as the target melting point.
-3. Enter `180` as the target enthalpy.
-4. Start the screening task.
-5. Download the generated result files after the task completes.
-
-Typical demo runtime on a normal desktop computer is expected to be within tens of minutes, depending on network latency for DashScope API calls and the selected screening target.
-
-## Expected Output
-
-The main output files are generated in the project root directory after a screening run:
-
-- `agent_recommended_results.csv`
-- `salt_combinations_formatted.csv`
-- `results_perfect_compliance.csv`
-- `results_good_compliance.csv`
-- `results_acceptable_compliance.csv`
-
-This repository includes `agent_recommended_results.csv` as a representative example output file and schema reference. Important columns include:
-
-- `salt_a`, `salt_b`, `salt_c`
-- `ratio_a`, `ratio_b`, `ratio_c`
-- `tm_pred`, `dh_pred`
-- `single_peak_proba`, `is_single_peak`
-- `compliance_level`, `compliance_desc`
-- `score`
-
-Because the workflow includes external LLM calls, exact candidate ordering can vary if the upstream model behavior changes. The trained prediction models and rule-based post-processing code are included in this repository to support reproducible testing of the main screening workflow.
-
-## Figure Reproduction
-
-The folder `figure_reproduction/` contains a Jupyter notebook and processed CSV/XLSX files for reproducing selected manuscript-related visualizations from the provided datasets and exported screening results.
-
-The main notebook is:
-
-- `figure_reproduction/reproduce_key_figures.ipynb`
-
-Demo target values used by the visualization workflow:
-
-- Target melting point (`Tm`): `14`
-- Target enthalpy (`ΔHm`): `180`
-
-Install the additional notebook/plotting dependencies before running the visualization workflow:
+## Grouped validation (Table S7, Supplementary Section S9, Fig. 7b,c)
 
 ```bash
-pip install -r requirements-visualization.txt
+cd validation
+python m0_on_feedback.py          # seconds: frozen M0 on all 171 feedback formulations (Section S9.2)
+python grouping_robustness.py --out results_rerun   # about 10 min: grouping schemes S1-S4 with fixed M1 hyperparameters (Table S7b)
+python grouped_cv_nested.py       # several hours: grouped nested validation, 5 folds x 3 repeats (Table S7a)
 ```
 
-Run the notebook from the `figure_reproduction/` directory so that the relative input paths resolve correctly.
+The 38 feedback salt combinations are the outer grouping unit. Held-out feedback
+formulations form the test set; literature records remain in the main nested training folds.
+The additional sensitivity analysis evaluates the 36 feedback combinations absent from the literature data.
+The sensitivity analyses read the archived classification task input; the
+main nested validation reads the combined analysis collection. See
+`validation/README_S7b.md` for inputs and execution details. The scripts verify the MD5 checksums of the M0 models before use.
+The outputs in `validation/results/` include per-sample, per-fold and per-repeat
+predictions for the reproduced Table S7b. Verify them without training using
+`python validation/verify_grouping_outputs.py --results validation/results` from the repository root.
+Source scripts, input mappings and archived runs are retained under
+`validation/provenance`.
 
-The notebook uses processed figure-input files in `figure_reproduction/` and exports PNG/PDF figures showing selected data distributions, model-result summaries, and target-oriented screening results.
+## Figure 7
 
-This notebook does not aim to reproduce every figure in the manuscript from raw experimental data. Instead, it provides reproducible examples for key visualizations associated with the curated hydrated-salt dataset, model outputs, and target-oriented screening results.
+```bash
+cd figure
+python plot_fig7a.py    # Tm-dHm distribution of single-peak literature and feedback records
+python plot_fig7b.py    # paired fold-wise Tm MAE (reads validation/results)
+python plot_fig7c.py    # absolute Tm error versus measured Tm (reads validation/results)
+python plot_fig7g.py --m0-dir <M0 filtered files> --m1-dir <M1 filtered files>
+```
 
-## Running on Custom Data
+Figures are written to `figure/output/`. Fig. 7g requires the compatibility-filtered full-space prediction
+files (about 1.4 × 10<sup>8</sup> predicted formulations in total). They are not included because of their size and
+are available from the corresponding authors on request. The statistics of the plotted layers are provided in
+`figure/data/fig7g_landscape_summary.csv`.
 
-Prepare a CSV file with one salt identifier column and the required descriptor columns. The example file `pure_hydrated_salts_dataset.csv` shows the expected column structure:
+## Model files and checksums
 
-- `ID`
-- `Tm (°C)`
-- `ΔHm (J/g)`
-- `Molecular Weight`
-- `Hydrogen Bond Donor Count`
-- `Hydrogen Bond Acceptor Count`
-- `Topological Polar Surface Area`
-- `Heavy Atom Count`
-- `Complexity`
-- `Covalently-Bonded Unit Count`
-- `Hydration Number`
-- `Elem_H`
-- `Elem_O`
+| Model | Task | File | MD5 |
+|---|---|---|---|
+| M0 | single peak | `M0/models/single_peak_XGBoost_best_model_from_roc_redraw.pkl` | `d353c97d2863a72e5f036d9e0a8e8dd3` |
+| M0 | *T*<sub>m</sub> | `M0/models/tm_gbdt_best_model.pkl` | `9d93ddcc6f455d1dfe464ddd68ddd3a9` |
+| M0 | Δ*H*<sub>m</sub> | `M0/models/dh_svm_best_model.pkl` | `5bc8d7ce665669d955c028cbe9f5b9b6` |
+| M1 | single peak | `M1/models/GBDT_best_model.pkl` | `af70fe8f0b979e8aee93ed3bec3a9931` |
+| M1 | *T*<sub>m</sub> | `M1/models/RF_best_model.pkl` | `5d401724367be8dabef21d3dac742689` |
+| M1 | Δ*H*<sub>m</sub> | `M1/models/XGBoost_best_model.pkl` | `626600bbde1b913918db6177e1381a16` |
 
-UTF-8 encoded CSV files are preferred. If UTF-8 decoding fails, the application falls back to GBK.
+All models take the 39 features listed in `data/README.md`, in the order stored in `model.feature_names_in_`.
+Load them with `joblib.load` under the pinned package versions. Only load pickle files from trusted sources.
 
-## Web Routes
+## License
 
-- `GET /`: main page.
-- `POST /upload_run`: upload data and start a screening task.
-- `GET /status`: query task status, progress, and recent logs.
-- `GET /download/<which>`: download generated result files.
+Code is released under the MIT License (`LICENSE`). Data and trained models are released under the
+Creative Commons Attribution 4.0 International License (`LICENSE-DATA`).
 
-Supported values for `<which>`:
+## Citation
 
-- `recommend`
-- `features`
-- `perfect`
-- `good`
-- `acceptable`
-
-## Notes for Manuscript Review
-
-- The repository includes the source code, example input data, representative output file, and trained model files required to run and test the current screening workflow.
-- Structured metadata in `data/` are required for compatibility-aware screening and reranking.
-- The post-processing module applies an additional compatibility-weighted ranking step after the main screening stage.
-- Processed structured records and example datasets are provided for running and testing the workflow. Full raw source datasets and additional curation details are available from the corresponding author upon reasonable request.
-- This version has been cleaned to remove deprecated testing code and nonessential legacy entry points.
-
-## License and Availability
-
-This repository is provided to support manuscript review and software reproducibility. Redistribution, reuse, or modification outside manuscript review and reproducibility assessment requires permission from the authors unless a formal license is added later.
-
-## Disclaimer
-
-This repository is intended to accompany an academic manuscript. Sensitive credentials should be externalized and managed through environment variables or other secure configuration mechanisms.
+If you use this code or data, please cite the manuscript above.

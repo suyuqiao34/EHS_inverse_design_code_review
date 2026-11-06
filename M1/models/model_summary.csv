@@ -1,0 +1,4 @@
+task,algorithm,file,selection_metric,mean_over_100_splits,sd_over_100_splits,best_params
+single_peak,GBDT,GBDT_best_model.pkl,roc_auc_repeat_mean,0.7814,0.0448,"{'n_estimators': 1000, 'learning_rate': 0.1281484917492938, 'max_depth': 7, 'subsample': 0.7318613286337653, 'min_samples_split': 20, 'min_samples_leaf': 15, 'max_features': 0.32356396790352}"
+Tm,RF,RF_best_model.pkl,r2_mean,0.848,0.0594,"{'n_estimators': 200, 'max_depth': 36, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 0.13744036082915323, 'bootstrap': False}"
+dHm,XGBoost,XGBoost_best_model.pkl,r2_mean,0.7613,0.0841,"{'n_estimators': 1200, 'learning_rate': 0.044336823248818, 'max_depth': 7, 'min_child_weight': 3, 'subsample': 0.9034760394117362, 'colsample_bytree': 0.3766502525728244, 'gamma': 4.575995111562802, 'reg_lambda': 10.536560930129717, 'reg_alpha': 0.049820554189305484}"

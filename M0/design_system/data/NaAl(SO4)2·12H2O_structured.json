@@ -1,0 +1,49 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 24568,
+    "RecordTitle": "Aluminum sodium sulfate dodecahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 61,
+    "Enthalpy_value_J_per_g": 181
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "AlH24NaO20S2",
+    "Molecular_Weight_g_per_mol": "458.3",
+    "Hydrogen_Bond_Donor_Count": 12,
+    "Hydrogen_Bond_Acceptor_Count": 20,
+    "Topological_Polar_Surface_Angstrom2": 189,
+    "Heavy_Atom_Count": 24
+  },
+  "identifiers": {
+    "IUPAC_Name": "aluminum;sodium;disulfate;dodecahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.O.O.O.[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Na+].[Al+3]",
+    "InChI": "InChI=1S/Al.Na.2H2O4S.12H2O/c;;2*1-5(2,3)4;;;;;;;;;;;;/h;;2*(H2,1,2,3,4);12*1H2/q+3;+1;;;;;;;;;;;;;;/p-4",
+    "InChIKey": "ZEMWIYASLJTEHQ-UHFFFAOYSA-J"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 1118 (Sulfuric Acid)",
+      "CID 5359268 (Aluminum)",
+      "CID 5360545 (Sodium)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 16,
+    "Hydration_State": "dodecahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 62.2,
+    "Exact_Mass_Da": "458.0015432"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "NaAl(SO4)2·12H2O",
+    "Compound_Name": "Aluminum sodium sulfate dodecahydrate",
+    "Cation": "Al3+",
+    "Cation_Radius_Angstrom": 0.535,
+    "Anion": "SO42-",
+    "Hydration_Number": 12,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

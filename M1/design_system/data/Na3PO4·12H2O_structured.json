@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 61473,
+    "RecordTitle": "Sodium Phosphate, Tribasic, Dodecahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 65,
+    "Enthalpy_value_J_per_g": 190
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H24Na3O16P",
+    "Molecular_Weight_g_per_mol": "380.12",
+    "Hydrogen_Bond_Donor_Count": 12,
+    "Hydrogen_Bond_Acceptor_Count": 16,
+    "Topological_Polar_Surface_Angstrom2": 98.3,
+    "Heavy_Atom_Count": 20
+  },
+  "identifiers": {
+    "IUPAC_Name": "trisodium;phosphate;dodecahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.O.O.O.[O-]P(=O)([O-])[O-].[Na+].[Na+].[Na+]",
+    "InChI": "InChI=1S/3Na.H3O4P.12H2O/c;;;1-5(2,3)4;;;;;;;;;;;;/h;;;(H3,1,2,3,4);12*1H2/q3*+1;;;;;;;;;;;;;/p-3",
+    "InChIKey": "ASTWEMOBIXQPPV-UHFFFAOYSA-K"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 5360545 (Sodium)",
+      "CID 1004 (Phosphoric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 16,
+    "Hydration_State": "dodecahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 36.8,
+    "Exact_Mass_Da": "380.04950452"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na3PO4·12H2O",
+    "Compound_Name": "Trisodium phosphate dodecahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "PO43-",
+    "Hydration_Number": 12,
+    "Anion_Charge": -3,
+    "Anion_Is_Polyatomic": true
+  }
+}

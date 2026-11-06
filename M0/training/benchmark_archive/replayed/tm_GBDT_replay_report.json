@@ -1,0 +1,43 @@
+{
+  "task": "tm",
+  "model": "GBDT",
+  "n": 186,
+  "n_features": 39,
+  "test_n": 38,
+  "n_runs": 100,
+  "model_params": {
+    "n_estimators": 225,
+    "learning_rate": 0.1314931673659004,
+    "max_depth": 6,
+    "subsample": 0.9803786883261242,
+    "min_samples_split": 6,
+    "min_samples_leaf": 5
+  },
+  "lr_family": null,
+  "alpha": 1.0,
+  "l1_ratio": 0.5,
+  "max_abs_delta_vs_original": {
+    "r2_train": 1.1102230246251565e-16,
+    "r2_test": 1.1102230246251565e-16,
+    "rmse_train": 5.551115123125783e-17,
+    "rmse_test": 8.881784197001252e-16
+  },
+  "summary": {
+    "r2_train": {
+      "mean": 0.9988355305555899,
+      "std_ddof1": 0.0003028329381652157
+    },
+    "r2_test": {
+      "mean": 0.9193572171338792,
+      "std_ddof1": 0.06456808945082967
+    },
+    "rmse_train": {
+      "mean": 0.5614924141320006,
+      "std_ddof1": 0.0712840173947269
+    },
+    "rmse_test": {
+      "mean": 4.396304272208781,
+      "std_ddof1": 1.3394594338445045
+    }
+  }
+}

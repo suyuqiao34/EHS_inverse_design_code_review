@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 61639,
+    "RecordTitle": "Sodium metasilicate nonahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 48,
+    "Enthalpy_value_J_per_g": 168
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H18Na2O12Si",
+    "Molecular_Weight_g_per_mol": "284.20",
+    "Hydrogen_Bond_Donor_Count": 9,
+    "Hydrogen_Bond_Acceptor_Count": 12,
+    "Topological_Polar_Surface_Angstrom2": 72.2,
+    "Heavy_Atom_Count": 15
+  },
+  "identifiers": {
+    "IUPAC_Name": "disodium;dioxido(oxo)silane;nonahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.[O-][Si](=O)[O-].[Na+].[Na+]",
+    "InChI": "InChI=1S/2Na.O3Si.9H2O/c;;1-4(2)3;;;;;;;;;/h;;;9*1H2/q2*+1;-2;;;;;;;;;",
+    "InChIKey": "PHIQPXBZDGYJOG-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5360545 (Sodium)",
+      "CID 14768 (Metasilicic acid)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 12,
+    "Hydration_State": "nonahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "284.03629110"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na2SiO3·9H2O",
+    "Compound_Name": "Sodium silicate nonahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "SiO32-",
+    "Hydration_Number": 9,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

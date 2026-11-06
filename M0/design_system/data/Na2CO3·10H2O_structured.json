@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 151402,
+    "RecordTitle": "Sodium Carbonate Decahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 33,
+    "Enthalpy_value_J_per_g": 247
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "CH20Na2O13",
+    "Molecular_Weight_g_per_mol": "286.14",
+    "Hydrogen_Bond_Donor_Count": 10,
+    "Hydrogen_Bond_Acceptor_Count": 13,
+    "Topological_Polar_Surface_Angstrom2": 73.2,
+    "Heavy_Atom_Count": 16
+  },
+  "identifiers": {
+    "IUPAC_Name": "disodium;carbonate;decahydrate",
+    "SMILES": "C(=O)([O-])[O-].O.O.O.O.O.O.O.O.O.O.[Na+].[Na+]",
+    "InChI": "InChI=1S/CH2O3.2Na.10H2O/c2-1(3)4;;;;;;;;;;;;/h(H2,2,3,4);;;10*1H2/q;2*+1;;;;;;;;;;/p-2",
+    "InChIKey": "XYQRXRFVKUPBQN-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 5360545 (Sodium)",
+      "CID 962 (Water)",
+      "CID 767 (Carbonic Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 13,
+    "Hydration_State": "decahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "286.06992925"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na2CO3·10H2O",
+    "Compound_Name": "Sodium Carbonate Decahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "CO32-",
+    "Hydration_Number": 10,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

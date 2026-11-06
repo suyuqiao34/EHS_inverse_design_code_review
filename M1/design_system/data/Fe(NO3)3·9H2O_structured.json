@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 16211566,
+    "RecordTitle": "Ferric nitrate, nonahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 47,
+    "Enthalpy_value_J_per_g": 155
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "FeH18N3O18",
+    "Molecular_Weight_g_per_mol": "404.00",
+    "Hydrogen_Bond_Donor_Count": 9,
+    "Hydrogen_Bond_Acceptor_Count": 18,
+    "Topological_Polar_Surface_Angstrom2": 198,
+    "Heavy_Atom_Count": 22
+  },
+  "identifiers": {
+    "IUPAC_Name": "iron(3+);trinitrate;nonahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.O.O.O.O.O.[Fe+3]",
+    "InChI": "InChI=1S/Fe.3NO3.9H2O/c;3*2-1(3)4;;;;;;;;;/h;;;;9*1H2/q+3;3*-1;;;;;;;;;",
+    "InChIKey": "SZQUEWJRBJDHSM-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 23925 (Iron)",
+      "CID 944 (Nitric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 13,
+    "Hydration_State": "nonahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "403.993471"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Fe(NO3)3·9H2O",
+    "Compound_Name": "Iron(III) nitrate nonahydrate",
+    "Cation": "Fe3+",
+    "Cation_Radius_Angstrom": 0.645,
+    "Anion": "NO3-",
+    "Hydration_Number": 9,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

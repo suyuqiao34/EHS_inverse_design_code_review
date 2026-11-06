@@ -1,0 +1,17 @@
+Data and trained models
+
+The datasets in data/, the salt libraries and structured salt metadata in M0/design_system and
+M1/design_system, the trained models in M0/models and M1/models, and the result tables in this repository
+are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Copyright (c) 2026 Y. Su, Z. Liu, Z. Zhang, H. Gao, Z. Sun, X. Jin, Y. Zhang, Z. Huang, L. Yu, J. Ding, J. Li,
+X. Wang, G. Wang
+
+You are free to share and adapt the material for any purpose, provided that you give appropriate credit by
+citing the accompanying manuscript, provide a link to the license and indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Molecular descriptors and identifiers of the pure salts were retrieved from PubChem
+(https://pubchem.ncbi.nlm.nih.gov). Literature-derived records are compiled from the published sources cited in
+the manuscript and its Supplementary Information.

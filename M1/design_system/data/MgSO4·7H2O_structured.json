@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 24843,
+    "RecordTitle": "Magnesium Sulfate Heptahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 95.4,
+    "Enthalpy_value_J_per_g": 202
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H14MgO11S",
+    "Molecular_Weight_g_per_mol": "246.48",
+    "Hydrogen_Bond_Donor_Count": 7,
+    "Hydrogen_Bond_Acceptor_Count": 11,
+    "Topological_Polar_Surface_Angstrom2": 95.6,
+    "Heavy_Atom_Count": 13
+  },
+  "identifiers": {
+    "IUPAC_Name": "magnesium;sulfate;heptahydrate",
+    "SMILES": "O.O.O.O.O.O.O.[O-]S(=O)(=O)[O-].[Mg+2]",
+    "InChI": "InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2",
+    "InChIKey": "WRUGWIBCXHJTDG-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 5462224 (Magnesium)",
+      "CID 1118 (Sulfuric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": "heptahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 62.2,
+    "Exact_Mass_Da": "246.0107241"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "MgSO4·7H2O",
+    "Compound_Name": "Magnesium sulfate heptahydrate",
+    "Cation": "Mg2+",
+    "Cation_Radius_Angstrom": 0.72,
+    "Anion": "SO42-",
+    "Hydration_Number": 7,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 202877,
+    "RecordTitle": "Magnesium Nitrate Hexahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 89.9,
+    "Enthalpy_value_J_per_g": 163
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H12MgN2O12",
+    "Molecular_Weight_g_per_mol": "256.41",
+    "Hydrogen_Bond_Donor_Count": 6,
+    "Hydrogen_Bond_Acceptor_Count": 12,
+    "Topological_Polar_Surface_Angstrom2": 132,
+    "Heavy_Atom_Count": 15
+  },
+  "identifiers": {
+    "IUPAC_Name": "magnesium;dinitrate;hexahydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.O.O.O.O.[Mg+2]",
+    "InChI": "InChI=1S/Mg.2NO3.6H2O/c;2*2-1(3)4;;;;;;/h;;;6*1H2/q+2;2*-1;;;;;;",
+    "InChIKey": "MFUVDXOKPBAHMC-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 944 (Nitric Acid)",
+      "CID 962 (Water)",
+      "CID 5462224 (Magnesium)"
+    ],
+    "Covalently_Bonded_Unit_Count": 9,
+    "Hydration_State": "hexahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "256.0240655"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Mg(NO3)2·6H2O",
+    "Compound_Name": "Magnesium nitrate hexahydrate",
+    "Cation": "Mg2+",
+    "Cation_Radius_Angstrom": 0.72,
+    "Anion": "NO3-",
+    "Hydration_Number": 6,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

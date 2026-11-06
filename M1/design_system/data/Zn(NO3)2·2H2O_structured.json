@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 129696805,
+    "RecordTitle": "ZINC nitrate dihydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 55,
+    "Enthalpy_value_J_per_g": 68
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H4N2O8Zn",
+    "Molecular_Weight_g_per_mol": "225.4",
+    "Hydrogen_Bond_Donor_Count": 2,
+    "Hydrogen_Bond_Acceptor_Count": 8,
+    "Topological_Polar_Surface_Angstrom2": 128,
+    "Heavy_Atom_Count": 11
+  },
+  "identifiers": {
+    "IUPAC_Name": "zinc;dinitrate;dihydrate",
+    "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].O.O.[Zn+2]",
+    "InChI": "InChI=1S/2NO3.2H2O.Zn/c2*2-1(3)4;;;/h;;2*1H2;/q2*-1;;;+2",
+    "InChIKey": "PTSZYEWEQITNAC-UHFFFAOYSA-N"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 23994 (Zinc)",
+      "CID 944 (Nitric Acid)"
+    ],
+    "Covalently_Bonded_Unit_Count": 5,
+    "Hydration_State": "dihydrate"
+  },
+  "computed_properties": {
+    "Complexity": 18.8,
+    "Exact_Mass_Da": "223.925907"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Zn(NO3)2·2H2O",
+    "Compound_Name": "ZINC nitrate dihydrate",
+    "Cation": "Zn2+",
+    "Cation_Radius_Angstrom": 0.74,
+    "Anion": "NO3-",
+    "Hydration_Number": 2,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": true
+  }
+}

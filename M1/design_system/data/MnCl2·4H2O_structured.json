@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 26003,
+    "RecordTitle": "Mangoral"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 58,
+    "Enthalpy_value_J_per_g": 151
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "Cl2H8MnO4",
+    "Molecular_Weight_g_per_mol": "197.90",
+    "Hydrogen_Bond_Donor_Count": 4,
+    "Hydrogen_Bond_Acceptor_Count": 6,
+    "Topological_Polar_Surface_Angstrom2": 4,
+    "Heavy_Atom_Count": 7
+  },
+  "identifiers": {
+    "IUPAC_Name": "manganese(2+);dichloride;tetrahydrate",
+    "SMILES": "O.O.O.O.[Cl-].[Cl-].[Mn+2]",
+    "InChI": "InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2",
+    "InChIKey": "CNFDGXZLMLFIJV-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 313 (Hydrochloric Acid)",
+      "CID 23930 (Manganese)",
+      "CID 962 (Water)"
+    ],
+    "Covalently_Bonded_Unit_Count": 7,
+    "Hydration_State": ""
+  },
+  "computed_properties": {
+    "Complexity": 0,
+    "Exact_Mass_Da": "196.918007"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "MnCl2·4H2O",
+    "Compound_Name": "Manganese(II) chloride tetrahydrate",
+    "Cation": "Mn2+",
+    "Cation_Radius_Angstrom": 0.83,
+    "Anion": "Cl-",
+    "Hydration_Number": 4,
+    "Anion_Charge": -1,
+    "Anion_Is_Polyatomic": false
+  }
+}

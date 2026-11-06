@@ -1,0 +1,3 @@
+model,layer,n_rows,n_outside_grid,tm_min,tm_max,dh_min,dh_max,n_tm_below_0C,n_tm_below_minus10C
+M0,filtered_combined,105371806,0,12.08,76.74,38.49,245.37,0,0
+M1,filtered_combined,35201995,0,-28.59,76.4,-2.82,267.12,357109,12774

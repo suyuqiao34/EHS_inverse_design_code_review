@@ -1,0 +1,48 @@
+{
+  "record_info": {
+    "RecordType": "CID",
+    "RecordNumber": 62649,
+    "RecordTitle": "Sodium sulfate decahydrate"
+  },
+  "thermal_properties": {
+    "Melting_temperature_C": 32.4,
+    "Enthalpy_value_J_per_g": 249.4
+  },
+  "chemical_structure": {
+    "Molecular_Formula": "H20Na2O14S",
+    "Molecular_Weight_g_per_mol": "322.20",
+    "Hydrogen_Bond_Donor_Count": 10,
+    "Hydrogen_Bond_Acceptor_Count": 14,
+    "Topological_Polar_Surface_Angstrom2": 98.6,
+    "Heavy_Atom_Count": 17
+  },
+  "identifiers": {
+    "IUPAC_Name": "disodium;sulfate;decahydrate",
+    "SMILES": "O.O.O.O.O.O.O.O.O.O.[O-]S(=O)(=O)[O-].[Na+].[Na+]",
+    "InChI": "InChI=1S/2Na.H2O4S.10H2O/c;;1-5(2,3)4;;;;;;;;;;/h;;(H2,1,2,3,4);10*1H2/q2*+1;;;;;;;;;;;/p-2",
+    "InChIKey": "RSIJVJUOQBWMIM-UHFFFAOYSA-L"
+  },
+  "composition": {
+    "Component_Compounds": [
+      "CID 962 (Water)",
+      "CID 1118 (Sulfuric Acid)",
+      "CID 5360545 (Sodium)"
+    ],
+    "Covalently_Bonded_Unit_Count": 13,
+    "Hydration_State": "decahydrate"
+  },
+  "computed_properties": {
+    "Complexity": 62.2,
+    "Exact_Mass_Da": "322.03691505"
+  },
+  "Salt_Features": {
+    "Salt_Formula": "Na2SO4·10H2O",
+    "Compound_Name": "Sodium sulfate decahydrate",
+    "Cation": "Na+",
+    "Cation_Radius_Angstrom": 1.02,
+    "Anion": "SO42-",
+    "Hydration_Number": 10,
+    "Anion_Charge": -2,
+    "Anion_Is_Polyatomic": true
+  }
+}

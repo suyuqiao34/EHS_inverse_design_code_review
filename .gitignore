@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.log
+
+# outputs written by the scripts
+results_rerun/
+refit/
+figure7/output/
+figure7/_cache_fig7g/
+
+# outputs written by the design systems
+M0/design_system/data/uploaded_input.csv
+M1/design_system/data/uploaded_input.csv
+M0/design_system/*.csv
+M1/design_system/*.csv
+!M0/design_system/pure_hydrated_salts_dataset.csv
+!M1/design_system/pure_hydrated_salts_dataset.csv

@@ -1,0 +1,7 @@
+{
+  "task": "tm",
+  "family": "ridge",
+  "alpha_inferred_from_saved_metrics": 0.04844446369092469,
+  "fit_mse_on_r2_3seeds": 3.6834914208680823e-22,
+  "status": "numerically inferred, not original saved hyperparameter"
+}
